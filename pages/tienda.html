@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tienda</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <body>
+    <header>
+        <section class="barra-menu" style="background-color: #ff7d03">
+          <nav class="navbar navbar-expand-md container">
+            <!-- LOGO -->
+            <div class="navbar-brand">
+                <a href="../index.html">
+                    <img src="../medios/logo.jpg" class="rounded-end-circle" alt="">
+                </a>
+            </div>
+      
+            <!-- Botón hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- Menú colapsable -->
+            <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+              <ul class="navbar-nav mx-auto gap-4 text-center">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="contactos.html">Contactos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="sobrenosotros.html">Sobre Nosotros</a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Carrito -->
+            <div class="ms-3 d-flex">
+              <img src="../medios/carrito.png" alt="Carrito" style="width: 35px;">
+            </div>
+          </nav>
+        </section>
+      </header>
+</head>
+<main>
+    <section>
+         <!-- boostrap -->
+         <div class="container-fluid banner text-white text-center p-5">
+            <h1 class="sombra-textos">¡Encontra las mejores bebidas!</h1>
+            <p class="sombra-textos">Las mejores bebidas a tu alcance</p>
+        </div>
+    </section>
+
+    <section class="p-4">
+        <div class="tienda-box">
+          <h2>Tienda</h2>
+        </div>
+    </section>
+
+    <article class="tienda">
+      <!-- boostrap -->
+        <section>
+            <div class="tienda-formulario">
+                <aside class="sidebar">
+                    <form action="">
+                        <div class="buscar">
+                            <label for="buscar">Buscar productos</label>
+                            <div class="buscar-inputs">
+                              <input type="text" id="buscar" placeholder="Buscar productos...">
+                              <input type="button" value="buscar">
+                            </div>
+                        </div>
+                      <div class="filtro">
+                        <label for="filtrar">Filtrar por precios</label>
+                        <input type="range" id="filtrarprecio">
+                      </div>
+                        <div class="precio-rango">
+                          <div>
+                            <input type="number" id="minimo" placeholder="$34.9">
+                            <p>Min. Precio</p>
+                          </div>
+                          <div>
+                            <input type="number" id="maximo" placeholder="$100.0">
+                            <p>Max. Precio</p>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </aside>
+            </div>
+        </section>
+        
+        <section>
+            <div class="productos01-tienda">
+                <div>
+                    <img src="../medios/cinzano-bianco-1lt.jpg" alt="">
+                    <h4>vermut</h4>
+                    <h3>cinzano bianco 1lt</h3>
+                    <h3>$16.130,00</h3>
+                    <!-- bootstrap -->
+                    <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+                <div>
+                    <img src="../medios/Vino Tinto Trumpeter 750 ml.jpg" alt="">
+                    <h4>vinos</h4>
+                    <h3>Trumpeter Tinto 750ml</h3>
+                    <h3>$36.000,00</h3>
+                    <!-- bootstrap -->
+                    <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+                <div>
+                    <img src="../medios/SKYvodka.jpg" alt="">
+                    <h4>vodka</h4>
+                    <h3>SKYY vodka 750ml</h3>
+                    <h3>$8.600,00</h3>
+                    <!-- bootstrap -->
+                    <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+                <div>
+                    <img src="../medios/cerveza corona.jpg" alt="">
+                    <h4>cerveza</h4>
+                    <h3>cerveza CORONA 710ml</h3>
+                    <h3>$5.100,00</h3>
+                    <!-- bootstrap -->
+                    <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+                <div>
+                    <img src="../medios/mesa-de-trabajo-969_1-25670c34db0813664e17002243229801-640-0.png" alt="">
+                    <h4>gin</h4>
+                    <h3>Restinga Artesanal 700ml</h3>
+                    <h3>$46.230,00</h3>
+                   <!-- bootstrap -->
+                   <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+                <div>
+                    <img src="../medios/vino santa julia blanco.jpg" alt="">
+                    <h4>vinos</h4>
+                    <h3>Santa Julia Blanco dulce</h3>
+                    <h3>$16.230,00</h3>
+                   <!-- bootstrap -->
+                   <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+                <div>
+                    <img src="../medios/vodka sernova.jpg" alt="">
+                    <h4>vodka</h4>
+                    <h3>Sernova Clasico 700ml</h3>
+                    <h3>$9.120,00</h3>
+                    <!-- bootstrap -->
+                    <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+                <div>
+                    <img src="../medios/cerveza heineken.jpg" alt="">
+                    <h4>cerveza</h4>
+                    <h3>cerveza heineken 1 lt</h3>
+                    <h3>$4.500,00</h3>
+                    <!-- bootstrap -->
+                    <button type="button" class="btn btn-outline-light btn btn-primary btn-sm">Agregar al Carrito</button>
+                </div>
+            </div>
+        </section>
+    </article>
+</main>
+
+<footer>
+    <section class="footer-container">
+        <div class="logo-texto-footer">
+            <img src="../medios/logo.jpg" alt="logo">
+            <p>Somos apasionados por ofrecerte lo mejor en bebidas, priorizando la calidad, frescura y sabor en todo momento.</p>
+        </div>
+        <div class="medio-footer">
+            <h2>Red e-commerce</h2>
+            <a href="#">home</a>
+            <a href="../pages/tienda.html">tienda</a>
+            <a href="../pages/contactos.html">contactos</a>
+            <a href="../pages/sobrenosotros.html">sobre nosotros</a>
+            <a href="../pages/preguntasfrecuentes.html">preguntas frecuentes</a> 
+        </div>
+        <div class="izquierda-footer">
+            <h2>consumidor</h2>
+            <h4>politica de privacidad y cookies</h4>
+            <h4>preguntas frecuentes</h4>
+            <button>atencion al cliente
+               <img class="icono-button" src="../medios/telefono blanco.png" alt="">
+            </button>
+        </div>
+        <div class="derecha-footer">
+            <h2>seguinos</h2>
+            <img class="instagram" src="../medios/instagram blanco.png" alt="">
+            <img class="email" src="../medios/mail blanco.png" alt="">
+        </div>
+    </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
