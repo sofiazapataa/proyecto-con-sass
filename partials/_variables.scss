@@ -1,0 +1,58 @@
+$naranja: #ff7d03;
+$gris: #ababab;
+$negro:  #484848;
+$blanco: #ffffff;
+$font: "Poppins", sans-serif;
+
+// EXTEND
+// copia las propiedades de otra clase o etiqueta
+
+.boton-verde{
+    width: 60px;
+    border-radius: 20px;
+    border: 3px black solid;
+    color: $blanco;
+    background-color: green;
+}
+.boton-rojo{
+    @extend .boton-verde;
+    background-color: red;
+}
+
+
+// MIXIN
+// con parametros o sin parametros
+// sin parametros: no esta atado a nada, lo creo y puedo usarlo cuando lo necesite
+// con parametros: creamos variables
+
+
+@mixin flex-sin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin tamanio ($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+.img{
+    @include tamanio (20px , 30%)
+}
+.card{
+    @include flex-sin;
+}
+
+// mezcla
+// con parametros y sin parametros
+
+@mixin flex($direcion, $justify, $aling){
+    display: flex;
+    flex-direction: $direcion;
+    justify-content: $justify;
+    align-items: $aling;
+}
+.box{
+    @include flex(row, center, flex-start)
+}
