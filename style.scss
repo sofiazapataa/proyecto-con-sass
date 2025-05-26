@@ -1,12 +1,218 @@
 @use "./partials/header&footer" as*;
-@use "./partials/index" as*;
 @use "./partials/tienda" as*;
 @use "./partials/variables" as*;
 
+// HOME
+body{
+    background-color: $gris;
+}
 
+.banner{
+        background-image: url(./medios/banner.jpg);
+        background-size: cover;
+        background-position: center;  
+    .sombra-textos{
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.816);
+}    
+}
+.info {
+   @include info-cards;
+   div{
+    display: flex;
+    align-items: center;
+    border-radius: $borde-cards;
+    padding: 7px 15px;
+    gap: 15px;
+    max-width: 300px;
+    background-color: $naranja;
+    box-shadow: $sombra-cards;
+    margin: auto;
+   }
+   img{
+    width: 50px;
+    height: 50px;
+   }
+   h2{
+    margin: 0;
+    font-size: 16px;
+    color: $negro;
+   }
+}
+.mas-vendidos {
+  @include caja-destacada;
+  h2{
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+.info-2{
+    h1{
+        color: $negro;
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+        padding: 20px;
+    }
+    h3{
+        color: $negro;
+        font-size: small;
+        font-style: normal;
+        text-align: center;
+    }
+}
+.productos01{
+    @include productos;
+    div {
+        background-color: $negro;
+        border: 2px solid $naranja;
+        border-radius: $borde-cards;
+        box-shadow: $sombra-cards;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+    div:hover {
+        transform: scale(1.02);
+    }
+        img{
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: $borde-cards;
+        }
+            h4{
+               color: $negro;
+               font-size: 14px;
+               margin-bottom: 5px;
+               text-transform: lowercase;
+            }
+            h3{
+                font-size: 16px;
+                margin: 5px 0;
+                color: $negro;
+            }
+            button{
+                @include button-naranjas;
+            }
+            button:hover{
+                background-color:$verde;
+            }
+}
+.categorias{
+    text-align: center;
+  padding: 30px 10px;
+  max-width: 1200px;
+  margin: auto;
+    h2{
+        background-color: #ff5f0252;
+  color: $negro;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 0 auto 10px auto;
+  padding: 8px 10px;
+    }
+    h1{
+        padding-top: 10px;
+        color: $negro;
+        font-size: large;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    h3{
+        color: $negro;
+        font-size: small;
+        font-style: normal;
+        text-align: center;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+    .cuadros-info{
+        @include cuadros;
+        .cuadro{
+            @include cuadro-individual;
+        }
+        .cuadro:hover {
+             transform: scale(1.05);
+             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+.info-ecommerce {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: 
+    "izquierda centro derecha";
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+    .columna:first-child {
+        grid-area: izquierda;
+        display: flex;
+        justify-content: center;
+    }
+    .columna:last-child {
+  grid-area: derecha;
+  display: flex;
+  justify-content: center;
+}
+.contenido {
+  grid-area: centro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 0 15px;
+  logo{
+     width: 150px;
+  max-width: 100%;
+  }
+  p{
+    font-size: 18px;
+  line-height: 1.6;
+  max-width: 500px;
+
+  }
+}
+.iconos {
+  display: flex;
+  gap: 15px;
+  img{
+    width: 28px;
+  cursor: pointer;
+   max-width: 100%;
+  border-radius: 20px;
+  height: auto
+
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+.iconos img {
+  
+}
+
+.columna img {
+ ;
+}
 
 
 
 // ultimo partial 
-@use "./partials/media" as*;
+// @use "./partials/media" as*;
 
