@@ -32,78 +32,79 @@ footer {
   opacity: 0.9;
   padding: 30px;
 }
-
-.izquierda-footer h4 {
+footer .izquierda-footer h4 {
   font-size: 15px;
   padding: 5px;
 }
-
-.logo-texto-footer {
-  max-width: 400px;
-  width: auto;
-}
-
-.logo-texto-footer img {
-  width: 130px;
-  margin-bottom: 10px;
-}
-
-.logo-texto-footer p {
-  white-space: normal !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-  max-width: 100% !important;
-  display: block !important;
-}
-
-.footer-container {
+footer .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 30px;
 }
-
-.medio-footer,
-.izquierda-footer,
-.derecha-footer {
+footer .footer-container .logo-texto-footer {
+  max-width: 400px;
+  width: auto;
+}
+footer .footer-container .logo-texto-footer img {
+  width: 130px;
+  margin-bottom: 10px;
+}
+footer .footer-container .logo-texto-footer p {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  max-width: 100%;
+  display: block;
+}
+footer .medio-footer {
   max-width: 200px;
 }
-
-.medio-footer h2,
-.izquierda-footer h2,
-.derecha-footer h2 {
+footer .medio-footer h2 {
   font-size: 18px;
   margin-bottom: 10px;
   font-style: italic;
 }
-
-.medio-footer a {
+footer .medio-footer a {
   display: block;
   color: white;
   text-decoration: none;
   margin: 5px 0;
   font-size: 14px;
 }
-
-button {
+footer .izquierda-footer {
+  max-width: 200px;
+}
+footer .izquierda-footer h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+footer .izquierda-footer button {
   background: none;
   border: solid;
-  border-radius: 8px !important;
+  border-radius: 8px;
   padding: 8px;
   color: white;
   cursor: pointer;
   margin-top: 10px;
 }
-
-.icono-button {
+footer .izquierda-footer button .icono-button {
   width: 16px;
   vertical-align: middle;
   margin-left: 5px;
 }
-
-.instagram,
-.email {
+footer .derecha-footer {
+  max-width: 200px;
+}
+footer .derecha-footer h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+footer .derecha-footer .instagram,
+footer .derecha-footer .email {
   width: 30px;
   margin-right: 10px;
 }
@@ -222,13 +223,11 @@ body {
   color: #484848;
 }
 .productos01 button {
-  margin-top: 15px;
-  padding: 10px 20px;
   background-color: #ff7d03;
-  color: black;
-  font-weight: bold;
+  color: #484848;
+  padding: 10px 20px;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }

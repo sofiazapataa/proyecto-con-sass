@@ -93,7 +93,7 @@ body{
                 color: $negro;
             }
             button{
-                @include button-naranjas;
+                @include boton-personalizado ($naranja, $negro);
             }
             button:hover{
                 background-color:$verde;
@@ -186,7 +186,7 @@ body{
     width: 28px;
   cursor: pointer;
    max-width: 100%;
-  border-radius: 20px;
+  border-radius: $bordes;
   height: auto
 
   }
@@ -198,21 +198,7 @@ body{
 
 
 
-
-
-
-
-
-.iconos img {
-  
-}
-
-.columna img {
- ;
-}
-
-
-
 // ultimo partial 
 // @use "./partials/media" as*;
+
 

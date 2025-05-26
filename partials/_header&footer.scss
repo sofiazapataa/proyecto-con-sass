@@ -1,5 +1,6 @@
 @use "../partials/variables" as*;
 
+// menu de todos
 .barra-menu{
     background-color: $naranja;
     padding: 15px 30px;
@@ -40,70 +41,92 @@ footer{
     background-color: rgb(0, 0, 0);
     opacity: 0.9;
     padding: 30px;
-}
-.izquierda-footer h4{
-    font-size: 15px;
-    padding: 5px;
-}
-.logo-texto-footer {
-    max-width: 400px;
-    width: auto;
-  }
-.logo-texto-footer img{
-    width: 130px;
-    margin-bottom: 10px;
-}
-.logo-texto-footer p {
-    white-space: normal !important;
-    overflow: visible !important;
-    text-overflow: unset !important;
-    max-width: 100% !important;
-    display: block !important;
-}
-.footer-container{
+    .izquierda-footer{
+        h4{
+            font-size: 15px;
+            padding: 5px;
+        }
+    }
+    .footer-container{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 30px;
-  }  
-.medio-footer, 
-.izquierda-footer,
-.derecha-footer{
-    max-width: 200px
+    .logo-texto-footer{
+         max-width: 400px;
+         width: auto;
+         img{
+            width: 130px;
+            margin-bottom: 10px;
+         }
+         p{
+            white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    max-width: 100%;
+    display: block;
+        }
 
-}
-.medio-footer h2, 
-.izquierda-footer h2,
-.derecha-footer h2{
-    font-size: 18px;
+    }
+
+    }
+    .medio-footer{
+        max-width: 200px;
+        h2{
+            font-size: 18px;
     margin-bottom: 10px;
     font-style: italic;
-
-}
-.medio-footer a {
-    display: block;
+        }
+        a{
+             display: block;
     color: white;
     text-decoration: none;
     margin: 5px 0;
     font-size: 14px;
-}
-button {
+
+        }
+    }
+    .izquierda-footer{
+         max-width: 200px;
+         h2{
+            font-size: 18px;
+    margin-bottom: 10px;
+    font-style: italic;
+         }
+         button {
     background: none;
     border: solid;
-    border-radius: 8px !important;
+    border-radius: 8px;
     padding: 8px;
     color: white;
     cursor: pointer;
     margin-top: 10px;
-}
-.icono-button {
-    width: 16px;
-    vertical-align: middle;
-    margin-left: 5px;
-}
-.instagram,
+        .icono-button {
+              width: 16px;
+              vertical-align: middle;
+              margin-left: 5px;
+        }
+    }
+    }
+    .derecha-footer{
+         max-width: 200px;
+         h2{
+            font-size: 18px;
+    margin-bottom: 10px;
+    font-style: italic;
+         }
+         .instagram,
 .email {
   width: 30px;
   margin-right: 10px;
 }
+    }
+    
+}
+// MediaQ
+
+
+
+
+

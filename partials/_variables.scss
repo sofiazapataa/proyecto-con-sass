@@ -61,14 +61,12 @@ $borde-cards: 15px;
   gap: 20px;
   justify-content: center;
 }
-@mixin button-naranjas{
-margin-top: 15px;
+@mixin boton-personalizado($bg, $color-texto) {
+  background-color: $bg;
+  color: $color-texto;
   padding: 10px 20px;
-  background-color: $naranja;
-  color: black;
-  font-weight: bold;
   border: none;
-  border-radius: $borde-cards;
+  border-radius: $bordes-pequeños;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
