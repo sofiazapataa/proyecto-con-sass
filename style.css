@@ -1,3 +1,23 @@
+.mas-vendidos,
+.nosotros-box,
+.beneficios-box,
+.contacto-box,
+.preguntas-box,
+.tienda-box, .categorias h2 {
+  background-color: #ff7d03;
+  border-radius: 10px;
+  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+  color: #484848;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 12px;
+}
+
 .barra-menu {
   background-color: #ff7d03;
   padding: 15px 30px;
@@ -5,30 +25,31 @@
   justify-content: space-between;
   align-items: center;
 }
-.barra-menu div img {
+.barra-menu img {
   width: 50px;
 }
-.barra-menu nav ul {
+
+ul {
   list-style: none;
   display: flex;
   gap: 20px;
   margin: 0;
   padding: 0;
 }
-.barra-menu nav ul li a {
+ul a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 16px;
 }
-.barra-menu nav ul li a:active {
+ul a:active {
   text-decoration: underline;
 }
 
 /* footer de todos */
 footer {
-  color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  background-color: rgb(20, 20, 20);
   opacity: 0.9;
   padding: 30px;
 }
@@ -50,6 +71,7 @@ footer .footer-container .logo-texto-footer {
 footer .footer-container .logo-texto-footer img {
   width: 130px;
   margin-bottom: 10px;
+  border-radius: 15px;
 }
 footer .footer-container .logo-texto-footer p {
   white-space: normal;
@@ -68,7 +90,7 @@ footer .medio-footer h2 {
 }
 footer .medio-footer a {
   display: block;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   margin: 5px 0;
   font-size: 14px;
@@ -86,7 +108,7 @@ footer .izquierda-footer button {
   border: solid;
   border-radius: 8px;
   padding: 8px;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -107,6 +129,19 @@ footer .derecha-footer .instagram,
 footer .derecha-footer .email {
   width: 30px;
   margin-right: 10px;
+}
+
+.wp {
+  width: 100px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -134,7 +169,7 @@ body {
 .info div {
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 7px 15px;
   gap: 15px;
   max-width: 300px;
@@ -152,20 +187,12 @@ body {
   color: #484848;
 }
 
-.mas-vendidos {
-  background-color: #ff7d03;
-  border-radius: 10px;
-  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
-  color: #484848;
-  padding: 5px 10px;
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: fit-content;
-}
-.mas-vendidos h2 {
+.mas-vendidos h2,
+.nosotros-box h2,
+.beneficios-box h2,
+.contacto-box h2,
+.preguntas-box h2,
+.tienda-box h2 {
   font-size: 12px;
   margin-top: 5px;
 }
@@ -184,6 +211,31 @@ body {
   text-align: center;
 }
 
+.publicidad-sobrenosotros {
+  height: 300px;
+  display: flex;
+  border-radius: 15px;
+  padding: 30px;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #ff7d03, rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  box-shadow: box-shadow 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.publicidad-sobrenosotros .contenido-texto {
+  max-width: 600px;
+  margin-top: 10px;
+}
+.publicidad-sobrenosotros .contenido-texto h1 {
+  font-style: italic;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.publicidad-sobrenosotros .contenido-texto h3 {
+  font-size: 18px;
+}
+
 .productos01 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -193,7 +245,6 @@ body {
   padding: 40px 20px;
 }
 .productos01 div {
-  background-color: #484848;
   border: 2px solid #ff7d03;
   border-radius: 15px;
   box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
@@ -235,54 +286,44 @@ body {
   background-color: rgba(2, 229, 51, 0.3568627451);
 }
 
-.categorias {
-  text-align: center;
-  padding: 30px 10px;
-  max-width: 1200px;
-  margin: auto;
-}
-.categorias h2 {
-  background-color: rgba(255, 95, 2, 0.3215686275);
-  color: #484848;
-  border-radius: 5px;
-  width: fit-content;
-  margin: 0 auto 10px auto;
-  padding: 8px 10px;
-}
-.categorias h1 {
-  padding-top: 10px;
-  color: #484848;
-  font-size: large;
-  font-style: italic;
-  text-align: center;
-  margin-bottom: 10px;
-}
 .categorias h3 {
+  font-style: italic;
+  font-size: large;
   color: #484848;
-  font-size: small;
-  font-style: normal;
   text-align: center;
-  font-weight: normal;
-  margin-bottom: 40px;
+  padding-top: 10px;
 }
-.categorias .cuadros-info {
+.categorias h4 {
+  font-size: 12px;
+  text-align: center;
+  color: #484848;
+}
+
+.cuadros-info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
   justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
 }
-.categorias .cuadros-info .cuadro {
+
+.cuadro {
   background-color: #ff7d03;
-  color: black;
+  color: #484848;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: box-shadow 0 8px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: auto;
+  text-align: center;
 }
-.categorias .cuadros-info .cuadro:hover {
+
+.cuadro:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
@@ -302,10 +343,20 @@ body {
   display: flex;
   justify-content: center;
 }
+.info-ecommerce .columna:first-child img {
+  max-width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
 .info-ecommerce .columna:last-child {
   grid-area: derecha;
   display: flex;
   justify-content: center;
+}
+.info-ecommerce .columna:last-child img {
+  max-width: 100%;
+  border-radius: 20px;
+  height: auto;
 }
 .info-ecommerce .contenido {
   grid-area: centro;
@@ -316,9 +367,10 @@ body {
   gap: 20px;
   padding: 0 15px;
 }
-.info-ecommerce .contenido logo {
+.info-ecommerce .contenido .logo {
   width: 150px;
   max-width: 100%;
+  border-radius: 15px;
 }
 .info-ecommerce .contenido p {
   font-size: 18px;
@@ -335,6 +387,257 @@ body {
   max-width: 100%;
   border-radius: 20px;
   height: auto;
+}
+
+.presentacion-contactos {
+  position: relative;
+}
+.presentacion-contactos h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 20px;
+  margin: 20px;
+}
+.presentacion-contactos h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+}
+.presentacion-contactos p {
+  text-align: center;
+  font-style: italic;
+  margin: 20px;
+}
+
+.info-contactos {
+  position: relative;
+  text-align: center;
+}
+.info-contactos h2 {
+  margin-top: 60px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.info-contactos p {
+  margin-top: 5px;
+  margin: 20px;
+}
+.info-contactos img {
+  width: 30px;
+  top: 40px;
+}
+
+.horarios-contactos h2 {
+  text-decoration: underline;
+  margin: 20px;
+}
+.horarios-contactos p {
+  margin: 20px;
+}
+
+.info-contactos2 {
+  position: relative;
+}
+.info-contactos2 img {
+  width: 20px;
+  margin: 20px;
+}
+.info-contactos2 .telefono {
+  top: -1px;
+  left: 24px;
+  font-size: 18px;
+  position: absolute;
+  margin: 20px;
+}
+.info-contactos2 .mail {
+  top: 60px;
+  left: 28px;
+  font-size: 18px;
+  position: absolute;
+  margin: 20px;
+}
+.info-contactos2 .ubicacion {
+  top: 120px;
+  left: 28px;
+  margin: 20px;
+  font-size: 18px;
+  position: absolute;
+}
+
+.formulario-contacto h1 {
+  font-size: 25px;
+  padding-top: 8px;
+  padding-left: 18px;
+}
+.formulario-contacto div {
+  margin: 20px;
+}
+
+.terminos-y-condiciones {
+  margin: 20px;
+}
+
+.cuestionario {
+  padding-left: 16px;
+}
+.cuestionario h2 {
+  text-align: left;
+  text-decoration: solid;
+  background-color: #484848;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
+  border: rgba(255, 125, 3, 0.1176470588);
+  border-radius: 10px;
+  color: rgb(255, 140, 0);
+  padding: 20px;
+  font-size: 20px;
+}
+.cuestionario li {
+  list-style: none;
+}
+.cuestionario h3 {
+  font-size: 17px;
+  margin-left: 12px;
+}
+
+.titulos {
+  text-align: center;
+  text-decoration: solid;
+  padding: 20px;
+}
+.titulos h2 {
+  margin: 20px;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: underline;
+}
+.titulos h1 {
+  font-size: 25px;
+}
+.titulos p {
+  color: black;
+  padding: 7px 10px;
+  text-align: center;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.info-sobrenosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.info-sobrenosotros .contenido-texto {
+  max-width: 500px;
+  text-align: left;
+}
+.info-sobrenosotros .contenido-texto h1 {
+  text-align: left;
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.info-sobrenosotros .contenido-texto p {
+  margin: 20px;
+  padding: 10px;
+  padding-top: 1px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.contenido-img {
+  display: flex;
+  justify-content: center;
+}
+.contenido-img img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.publicidad-sobrenosotros {
+  height: 300px;
+  display: flex;
+  border-radius: 15px;
+  padding: 30px;
+  color: rgb(235, 228, 228);
+  background-image: linear-gradient(to right, rgb(255, 119, 0), rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+}
+.publicidad-sobrenosotros .contenido-texto-2 {
+  max-width: 600px;
+  margin-top: 10px;
+}
+.publicidad-sobrenosotros .contenido-texto-2 h2 {
+  font-style: italic;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.publicidad-sobrenosotros .contenido-texto-2 h3 {
+  font-size: 18px;
+}
+
+.beneficios-sobrenosotros h3 {
+  text-align: center;
+  font-size: 30px !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.beneficios-sobrenosotros p {
+  margin: 10px;
+  padding-top: 10px;
+  font-size: 16px !important;
+  max-width: 670px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.cuadros-info-nosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.cuadros-info-nosotros div {
+  background-color: #ff7d03;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px 6px rgba(0, 0, 0, 0.2);
+}
+.cuadros-info-nosotros div img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.cuadros-info-nosotros div h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+}
+.cuadros-info-nosotros div p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

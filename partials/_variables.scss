@@ -4,28 +4,22 @@ $gris: #ababab;
 $negro:  #484848;
 $blanco: #ffffff;
 $verde:  #02e5335b;
+
 // tipografia //
 $font: "Poppins", sans-serif;
+
 // sombras //
 $sombra-cards: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
 $sombra-cuadro: box-shadow 0 8px 15px rgba(0, 0, 0, 0.2);
+
 // bordes //
 $bordes:  20px;
-// card principio, columna img ~
 $bordes-pequeños: 10px; 
-// beneficios-box, inpunts, mas vendidos, aplica el borde de la img dentro de la card, boton, cuadro ~
 $borde-cards: 15px;
-// publicidad-sobrenosotros ~
 
 
 
-
-
-
-// EXTEND
-// copia las propiedades de otra clase o etiqueta
-
-@mixin caja-destacada {
+%caja-destacada {
   background-color: $naranja;
   border-radius: $bordes-pequeños;
   box-shadow: $sombra-cards;
@@ -37,16 +31,9 @@ $borde-cards: 15px;
   justify-content: center;
   margin: 0 auto;
   width: fit-content;
+  font-size: 12px;
 }
-@mixin info-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-}
+
 @mixin productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -54,13 +41,20 @@ $borde-cards: 15px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
+} 
+@mixin cuadro-individual {
+  background-color: $naranja;
+  color: $negro;
+  padding: 20px;
+  border-radius: $borde-cards;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: $sombra-cuadro;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-@mixin cuadros{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  justify-content: center;
-}
+
+// con parametros
 @mixin boton-personalizado($bg, $color-texto) {
   background-color: $bg;
   color: $color-texto;
@@ -70,34 +64,21 @@ $borde-cards: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-@mixin cuadro-individual {
-  background-color: #ff7d03;
-  color: black;
-  padding: 20px;
-  border-radius: 12px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+@mixin titulo-centrado($size: 30px) {
+  font-size: $size;
+  text-align: center;
+  font-style: italic;
 }
+
 
 // MIXIN
 // con parametros o sin parametros
 // sin parametros: no esta atado a nada, lo creo y puedo usarlo cuando lo necesite
 // con parametros: creamos variables
 
+// EXTEND
+// copia las propiedades de otra clase o etiqueta
 
 
 // MEZCLA
 // con parametros y sin parametros
-
-// @mixin flex($direcion, $justify, $aling){
-//     display: flex;
-//     flex-direction: $direcion;
-//     justify-content: $justify;
-//     align-items: $aling;
-// }
-// .box{
-//     @include flex(row, center, flex-start)
-// }
