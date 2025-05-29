@@ -407,13 +407,10 @@ body{
                 padding: 10px;
                 padding-top: 1px;
                 font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
               }
-    button{
-
-    }
-}
+          }
 }
 .contenido-img{
     display: flex;
@@ -439,6 +436,7 @@ body{
   background-position: center;
   margin: 20px;
    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+   margin-bottom: 40px;
          .contenido-texto-2 {
               max-width: 600px;
               margin-top: 10px;
@@ -452,26 +450,25 @@ body{
               }
             }
 }
-.beneficios-sobrenosotros{
-  h3{
-        text-align: center;
-        font-size: 30px !important;
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
+.beneficios-sobrenosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 
-    }
-    p{
-        margin: 10px;
-        padding-top: 10px;
-        font-size: 16px !important;
-        max-width: 670px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    padding: 10px;
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 870px;
+    margin-bottom: 10px;
   }
 }
+
 .cuadros-info-nosotros{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

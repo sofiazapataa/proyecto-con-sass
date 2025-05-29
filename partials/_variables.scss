@@ -18,7 +18,7 @@ $bordes-pequeños: 10px;
 $borde-cards: 15px;
 
 
-
+// caja box //
 %caja-destacada {
   background-color: $naranja;
   border-radius: $bordes-pequeños;
@@ -34,6 +34,7 @@ $borde-cards: 15px;
   font-size: 12px;
 }
 
+// card productos //
 @mixin productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -42,6 +43,8 @@ $borde-cards: 15px;
   margin: 0 auto;
   padding: 40px 20px;
 } 
+
+// cards info //
 @mixin cuadro-individual {
   background-color: $naranja;
   color: $negro;
@@ -54,7 +57,7 @@ $borde-cards: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-// con parametros
+// boton con parametros //
 @mixin boton-personalizado($bg, $color-texto) {
   background-color: $bg;
   color: $color-texto;
@@ -64,6 +67,8 @@ $borde-cards: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+// titulos centrados //
 @mixin titulo-centrado($size: 30px) {
   font-size: $size;
   text-align: center;

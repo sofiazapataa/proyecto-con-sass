@@ -1,2 +1,109 @@
 @use "../partials/variables" as*;
 @use "../partials/header&footer" as*;
+
+// TIENDA
+
+.tienda {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  align-items: flex-start;
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .buscar {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      .buscar-inputs {
+        display: flex;
+        flex-direction: row; 
+        gap: 10px; 
+        align-items: center;
+
+        input[type="text"] {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: $bordes-pequeños;
+          flex: 1;
+        }
+
+        input[type="button"] {
+          @include boton-personalizado($naranja, $negro);
+          padding: 10px 15px;
+          white-space: nowrap; 
+        }
+      }
+    }
+
+    .filtro {
+      input[type="range"] {
+        accent-color: $naranja;
+        padding: 15px;
+      }
+    }
+
+    .precio-rango {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+          width: 80px;
+          padding: 5px;
+          border-radius: $bordes-pequeños;
+          text-align: center;
+        }
+
+        p {
+          font-size: 12px;
+          margin-top: 5px;
+          color: $negro;
+        }
+      }
+    }
+  }
+}
+
+.productos01-tienda{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 30px;
+        padding: 20px;
+        div{
+             border: 1px solid $negro;
+             border-radius: $bordes-pequeños;
+             padding: 10px;
+             box-shadow: $sombra-cards;
+             text-align: center;
+             background-color: $blanco;
+             img{
+                 width: 100%;
+                 height: auto;
+                 border-radius: $bordes-pequeños;
+                }
+                h4, h3{
+                    color: $negro;
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
+                button{
+                     @include boton-personalizado ($naranja, $negro);
+                     margin-bottom: 10px; 
+                }
+            }
+}
+  

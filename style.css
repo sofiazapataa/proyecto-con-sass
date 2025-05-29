@@ -138,6 +138,109 @@ footer .derecha-footer .email {
   right: 50px;
 }
 
+.tienda {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  align-items: flex-start;
+}
+.tienda .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tienda .sidebar .buscar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tienda .sidebar .buscar label {
+  margin-bottom: 5px;
+}
+.tienda .sidebar .buscar .buscar-inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.tienda .sidebar .buscar .buscar-inputs input[type=text] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  flex: 1;
+}
+.tienda .sidebar .buscar .buscar-inputs input[type=button] {
+  background-color: #ff7d03;
+  color: #484848;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+.tienda .sidebar .filtro input[type=range] {
+  accent-color: #ff7d03;
+  padding: 15px;
+}
+.tienda .sidebar .precio-rango {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.tienda .sidebar .precio-rango div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tienda .sidebar .precio-rango div input {
+  width: 80px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+.tienda .sidebar .precio-rango div p {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #484848;
+}
+
+.productos01-tienda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+.productos01-tienda div {
+  border: 1px solid #484848;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+  text-align: center;
+  background-color: #ffffff;
+}
+.productos01-tienda div img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.productos01-tienda div h4, .productos01-tienda div h3 {
+  color: #484848;
+  font-size: 14px;
+  margin: 5px 0;
+}
+.productos01-tienda div button {
+  background-color: #ff7d03;
+  color: #484848;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -554,6 +657,7 @@ body {
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
+
 .contenido-img {
   display: flex;
   justify-content: center;
@@ -577,6 +681,7 @@ body {
   background-position: center;
   margin: 20px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+  margin-bottom: 40px;
 }
 .publicidad-sobrenosotros .contenido-texto-2 {
   max-width: 600px;
@@ -591,22 +696,21 @@ body {
   font-size: 18px;
 }
 
-.beneficios-sobrenosotros h3 {
-  text-align: center;
-  font-size: 30px !important;
+.beneficios-sobrenosotros {
   display: flex;
-  justify-content: center;
-  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.beneficios-sobrenosotros h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 .beneficios-sobrenosotros p {
-  margin: 10px;
-  padding-top: 10px;
-  font-size: 16px !important;
-  max-width: 670px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
+  font-size: 16px;
+  max-width: 870px;
+  margin-bottom: 10px;
 }
 
 .cuadros-info-nosotros {
