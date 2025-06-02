@@ -1,6 +1,7 @@
-@use "./partials/header&footer" as*;
+@use "./partials/header-footer" as*;
 @use "./partials/tienda" as*;
 @use "./partials/variables" as*;
+@use"./partials/media";
 
 
 * {
@@ -499,6 +500,52 @@ body{
     }
   }
 }
+// animaciones //
+
+// gradientes, lineal : de arriba a bajo, costado a otro
+//             radial : desde el centro
+
+// transform //
+
+// 1ro x eje horizontañ 2do y eje vertical
+// valores positivos : derc y abjo
+// valores negativos: izq y arriba
+
+// opcion rotar 
+// unidad de grados (deg)
+// valores + dere y valores - izq
+
+// escalar
+// duplica o achica su tamaño
+// se usa por veces, no px, no deg, no %, no existen valores negativos
+// valores mayor a 1 agranda
+//  valores menores de 1 a 0, achican 
+// (ancho - largo)
+
+// segar
+// solo con grados (deg)
+// se estira desde las puntas
+
+// pseudoclase
+// hover, se activa cuando pasa,os el mouse arriba
+// focus, se activa al hacer clic, solo para cosas que haga clic y siga en la pagina, ej: formularios, clic y cambia de color
+// active, boton activo
+// transition, agrega tiempo 
+
+// @keyframe: linea de tiempo, fraccionas los tiempos y generas acciones, que es lo que va a pasar en la animacion, desde que empieza a cuando termina.
+// 0%, 25%, 50%, 75%, 100% = 4segundos
+// efecto glich
+// efecto neo
+// efecto paralax, letras detras de img
+// efecto de estrellas q se mueven
+// efecto magic card
+
+// librerias para animaciones
+// animate.css (100% css)
 
 
 
+
+
+// agregar a los titulos box, agrandar al pasar el mouse
+// & agregar a los que se repiten
