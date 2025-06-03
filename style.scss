@@ -1,7 +1,7 @@
 @use "./partials/header-footer" as*;
 @use "./partials/tienda" as*;
 @use "./partials/variables" as*;
-@use"./partials/media";
+@use"./partials/media" as*;
 
 
 * {
@@ -339,11 +339,11 @@ body{
     h2{
         text-align: left;
         text-decoration: solid;
-        background-color: #484848;
+        background-color: $negro;
         box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
         border: #ff7d031e;
         border-radius: 10px;
-        color: rgb(255, 140, 0);
+        color: $naranja;
         padding: 20px;
         font-size: 20px;
 
@@ -431,7 +431,7 @@ body{
   padding: 30px;
   color: rgb(235, 228, 228);
   background-image:
-    linear-gradient(to right, rgb(255, 119, 0), rgba(255, 119, 0, 0.313)),
+    linear-gradient(to right, $naranja, rgba(255, 119, 0, 0.313)),
     url('./medios/banner\ sobre\ nosotros.jpg'); 
   background-size: cover;
   background-position: center;
@@ -478,10 +478,10 @@ body{
     border-radius: 10px;
     text-align: center;
     div{
-      background-color: #ff7d03;
+      background-color:$naranja;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 6px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: $sombra-cards;
     img{
        width: 40px;
     height: 40px;
@@ -490,7 +490,7 @@ body{
     h2{
        font-size: 18px;
     margin-bottom: 10px;
-    color:  rgb(0, 0, 0);
+    color: $negro;
     }
     p{
       font-size: 16px;

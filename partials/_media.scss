@@ -1,20 +1,18 @@
-@use "./header-footer";
-@use"./variables";
-@use"./tienda";
+@use"./variables" as*;
 
 @media only screen and (max-width: 480px) {
-    .mas-vendidos,
-    .nosotros-box,
-    .beneficios-box,
-    .contacto-box,
-    .preguntas-box,
-    .tienda-box {
-            @extend %caja-destacada;
-                   h2 {
-                      font-size: 12px;
-                      margin-top: 5px;
-                    }
-        }
+  .mas-vendidos,
+  .nosotros-box,
+  .beneficios-box,
+  .contacto-box,
+  .preguntas-box,
+  .tienda-box {
+    @include caja-destacada-mobile;
+    h2 {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
     // home
 .info-2{
         display: flex;
@@ -39,8 +37,13 @@
     }
 }
 .form-select.w-25 {
-      width: 90%;
-    }
+    width: 90% !important;
+    padding: 10px;
+    font-size: 14px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+  }
 .productos01 {
         flex-direction: column;
         align-items: center;
@@ -137,25 +140,35 @@
     }
   }
 .info-ecommerce {
-         display: flex;
          flex-direction: column;
-         align-items: center;
-         padding: 20px;
-         gap: 15px;
+         padding: 10px;
+         gap: 10px;
          .columna {
-            width: 100%;
-            display: flex;
             justify-content: center;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+                 height: auto;
+                 border-radius: $borde-cards;
+            }
         }
          .contenido {
+            order: 2; 
             text-align: center;
             padding: 10px;
             p{
-                 font-size: 14px;
+                 font-size: 12px !important;
                  max-width: 90%;
                  margin: auto;
+                 line-height: 1.6;
+                 padding: 10px;
             }
-            iconos{
+            img{
+                 width: 100%;
+                 height: auto;
+                 border-radius: $borde-cards;
+            }
+            .iconos{
                 margin-top: 10px;
                 display: flex;
                 justify-content: center;
@@ -165,9 +178,10 @@
                 }
             }
             .logo{
-                 width: 60px;
                  margin-bottom: 10px;
                  border-radius: $bordes-pequeños;
+                 width: 80px;
+                 margin: 10px auto;
                 }
         }
       }

@@ -6,8 +6,8 @@
 .tienda-box, .categorias h2 {
   background-color: #ff7d03;
   border-radius: 10px;
-  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
-  color: #484848;
+  box-shadow: 0 4px 8px rgba(134, 57, 19, 0.323);
+  color: #383838;
   padding: 5px 10px;
   text-align: center;
   font-weight: bold;
@@ -171,7 +171,7 @@ footer .derecha-footer .email {
 }
 .tienda .sidebar .buscar .buscar-inputs input[type=button] {
   background-color: #ff7d03;
-  color: #484848;
+  color: #383838;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -203,7 +203,7 @@ footer .derecha-footer .email {
 .tienda .sidebar .precio-rango div p {
   font-size: 12px;
   margin-top: 5px;
-  color: #484848;
+  color: #383838;
 }
 
 .productos01-tienda {
@@ -213,10 +213,10 @@ footer .derecha-footer .email {
   padding: 20px;
 }
 .productos01-tienda div {
-  border: 1px solid #484848;
+  border: 1px solid #383838;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+  box-shadow: 0 4px 8px rgba(134, 57, 19, 0.323);
   text-align: center;
   background-color: #ffffff;
 }
@@ -226,19 +226,347 @@ footer .derecha-footer .email {
   border-radius: 10px;
 }
 .productos01-tienda div h4, .productos01-tienda div h3 {
-  color: #484848;
+  color: #383838;
   font-size: 14px;
   margin: 5px 0;
 }
 .productos01-tienda div button {
   background-color: #ff7d03;
-  color: #484848;
+  color: #383838;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  .mas-vendidos,
+  .nosotros-box,
+  .beneficios-box,
+  .contacto-box,
+  .preguntas-box,
+  .tienda-box {
+    background-color: #ff7d03;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(134, 57, 19, 0.323);
+    color: #383838;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 12px;
+  }
+  .mas-vendidos h2,
+  .nosotros-box h2,
+  .beneficios-box h2,
+  .contacto-box h2,
+  .preguntas-box h2,
+  .tienda-box h2 {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .info-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .info-2 h1 {
+    color: #383838;
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    padding-top: 16px;
+  }
+  .info-2 h3 {
+    color: #383838;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    max-width: 90%;
+    padding: 10px;
+    padding-top: 2px;
+  }
+  .form-select.w-25 {
+    width: 90% !important;
+    padding: 10px;
+    font-size: 14px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+  }
+  .productos01 {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .productos01 div {
+    width: 200px;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 6px;
+    border: 2px solid #ff7d03;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  .productos01 div h4 {
+    font-size: 12px;
+    margin: 4px 0;
+  }
+  .productos01 div h3 {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+  .productos01 div button {
+    background-color: #ff7d03;
+    color: #383838;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .productos01 div img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .productos01 div img:hover {
+    transform: scale(1.1);
+  }
+  .publicidad-sobrenosotros h1 {
+    font-size: 20px;
+    box-shadow: 0, 5px, 5px 5px #383838;
+  }
+  .publicidad-sobrenosotros h3 {
+    font-size: 14px;
+  }
+  .categorias {
+    text-align: center;
+    padding: auto;
+    padding-top: 2px;
+  }
+  .categorias h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #ff7d03;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: auto;
+  }
+  .categorias h3 {
+    padding: 6px;
+    font-size: 15px;
+  }
+  .categorias h4 {
+    font-size: 12px;
+    max-width: 70%;
+    display: inline-block;
+    text-align: center;
+  }
+  .categorias .info-box {
+    padding-top: 12px;
+  }
+  .categorias .cuadros-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px;
+    margin-top: 2px;
+  }
+  .categorias .cuadros-info .cuadros {
+    display: flex;
+    margin: 10px;
+    padding: auto;
+  }
+  .info-ecommerce {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  .info-ecommerce .columna {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .info-ecommerce .columna img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .info-ecommerce .contenido {
+    order: 2;
+    text-align: center;
+    padding: 10px;
+  }
+  .info-ecommerce .contenido p {
+    font-size: 12px !important;
+    max-width: 90%;
+    margin: auto;
+    line-height: 1.6;
+    padding: 10px;
+  }
+  .info-ecommerce .contenido img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  .info-ecommerce .contenido .iconos {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .info-ecommerce .contenido .iconos img {
+    width: 30px;
+  }
+  .info-ecommerce .contenido .logo {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 80px;
+    margin: 10px auto;
+  }
+  .wp {
+    width: 75px;
+    height: 75px;
+  }
+}
+.contacto-box {
+  padding: 12px 12px 5px 12px;
+}
+
+.presentacion-contactos h1 {
+  padding-top: 0;
+  font-size: 23px;
+}
+.presentacion-contactos h2 {
+  font-size: 13px;
+}
+
+.formulario-contacto h1 {
+  font-size: 23px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: left;
+}
+
+.titulos h1 {
+  font-size: 24px;
+  padding-top: 0;
+}
+.titulos p {
+  font-size: 12px;
+}
+
+.cuestionario h2 {
+  text-align: left;
+  text-decoration: solid;
+  background-color: #383838;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
+  border: rgba(255, 125, 3, 0.1176470588);
+  border-radius: 10px;
+  color: #ff7d03;
+  padding: 10px;
+  font-size: 15px;
+  padding-top: 10px;
+}
+.cuestionario h3 {
+  font-size: 13px;
+  margin-left: 12px;
+  font-weight: normal;
+}
+.cuestionario li {
+  list-style-type: circle;
+  font-size: 13px;
+}
+.cuestionario .cuestionario-info {
+  padding-bottom: 10px;
+}
+
+.info-sobrenosotros {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.info-sobrenosotros .contenido-texto h1 {
+  font-size: 23px;
+  padding-top: 0;
+}
+.info-sobrenosotros .contenido-texto p {
+  font-size: 12px;
+}
+
+.publicidad-sobrenosotros {
+  padding-bottom: 10px;
+  margin-bottom: 55px;
+}
+
+.beneficios-box {
+  padding-top: 10px;
+}
+
+.beneficios-sobrenosotros h1 {
+  font-size: 23px;
+}
+.beneficios-sobrenosotros p {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.cuadros-info-nosotros {
+  margin-top: -20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  justify-items: center;
+}
+
+.footer-container .logo-texto-footer img {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container .logo-texto-footer p {
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+.footer-container .medio-footer h2 {
+  font-size: 15px;
+  margin-top: 5px;
+}
+.footer-container .medio-footer a {
+  font-size: 12px;
+  gap: 5px;
+}
+.footer-container .izquierda-footer h2 {
+  font-size: 15px;
+}
+.footer-container .izquierda-footer h4 {
+  font-size: 13px;
+}
+.footer-container .izquierda-footer button {
+  width: fit-content;
+  white-space: nowrap;
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 10px;
+}
+.footer-container .izquierda-footer button .icono-button {
+  width: 15px;
 }
 
 * {
@@ -277,7 +605,7 @@ body {
   gap: 15px;
   max-width: 300px;
   background-color: #ff7d03;
-  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+  box-shadow: 0 4px 8px rgba(134, 57, 19, 0.323);
   margin: auto;
 }
 .info img {
@@ -287,7 +615,7 @@ body {
 .info h2 {
   margin: 0;
   font-size: 16px;
-  color: #484848;
+  color: #383838;
 }
 
 .mas-vendidos h2,
@@ -301,14 +629,14 @@ body {
 }
 
 .info-2 h1 {
-  color: #484848;
+  color: #383838;
   font-size: 40px;
   font-style: italic;
   text-align: center;
   padding: 20px;
 }
 .info-2 h3 {
-  color: #484848;
+  color: #383838;
   font-size: small;
   font-style: normal;
   text-align: center;
@@ -324,7 +652,7 @@ body {
   background-size: cover;
   background-position: center;
   margin: 20px;
-  box-shadow: box-shadow 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 .publicidad-sobrenosotros .contenido-texto {
   max-width: 600px;
@@ -350,7 +678,7 @@ body {
 .productos01 div {
   border: 2px solid #ff7d03;
   border-radius: 15px;
-  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+  box-shadow: 0 4px 8px rgba(134, 57, 19, 0.323);
   padding: 20px;
   text-align: center;
   transition: transform 0.2s ease;
@@ -366,7 +694,7 @@ body {
   border-radius: 15px;
 }
 .productos01 h4 {
-  color: #484848;
+  color: #383838;
   font-size: 14px;
   margin-bottom: 5px;
   text-transform: lowercase;
@@ -374,11 +702,11 @@ body {
 .productos01 h3 {
   font-size: 16px;
   margin: 5px 0;
-  color: #484848;
+  color: #383838;
 }
 .productos01 button {
   background-color: #ff7d03;
-  color: #484848;
+  color: #383838;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -392,14 +720,14 @@ body {
 .categorias h3 {
   font-style: italic;
   font-size: large;
-  color: #484848;
+  color: #383838;
   text-align: center;
   padding-top: 10px;
 }
 .categorias h4 {
   font-size: 12px;
   text-align: center;
-  color: #484848;
+  color: #383838;
 }
 
 .cuadros-info {
@@ -414,13 +742,13 @@ body {
 
 .cuadro {
   background-color: #ff7d03;
-  color: #484848;
+  color: #383838;
   padding: 20px;
   border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: box-shadow 0 8px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   padding: auto;
   text-align: center;
@@ -587,11 +915,11 @@ body {
 .cuestionario h2 {
   text-align: left;
   text-decoration: solid;
-  background-color: #484848;
+  background-color: #383838;
   box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
   border: rgba(255, 125, 3, 0.1176470588);
   border-radius: 10px;
-  color: rgb(255, 140, 0);
+  color: #ff7d03;
   padding: 20px;
   font-size: 20px;
 }
@@ -676,7 +1004,7 @@ body {
   border-radius: 15px;
   padding: 30px;
   color: rgb(235, 228, 228);
-  background-image: linear-gradient(to right, rgb(255, 119, 0), rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
+  background-image: linear-gradient(to right, #ff7d03, rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
   background-size: cover;
   background-position: center;
   margin: 20px;
@@ -725,7 +1053,7 @@ body {
   background-color: #ff7d03;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 2px 6px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(134, 57, 19, 0.323);
 }
 .cuadros-info-nosotros div img {
   width: 40px;
@@ -735,7 +1063,7 @@ body {
 .cuadros-info-nosotros div h2 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: rgb(0, 0, 0);
+  color: #383838;
 }
 .cuadros-info-nosotros div p {
   font-size: 16px;

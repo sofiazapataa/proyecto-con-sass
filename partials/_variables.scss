@@ -1,12 +1,7 @@
-@use"./header-footer";
-@use"./media";
-@use"./tienda";
-@use"./variables";
-
 // colores //
 $naranja: #ff7d03;
 $gris: #ababab;
-$negro:  #484848;
+$negro:  #383838;
 $blanco: #ffffff;
 $verde:  #02e5335b;
 
@@ -38,6 +33,24 @@ $borde-cards: 15px;
   width: fit-content;
   font-size: 12px;
 }
+
+// caja box para tamaño movile
+
+@mixin caja-destacada-mobile {
+  background-color: $naranja;
+  border-radius: $bordes-pequeños;
+  box-shadow: $sombra-cards;
+  color: $negro;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 12px;
+}
+
 
 // card productos //
 @mixin productos {
