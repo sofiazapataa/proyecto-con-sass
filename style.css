@@ -14,7 +14,6 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: 12px;
 }
@@ -259,7 +258,6 @@ footer .derecha-footer .email {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    width: -moz-fit-content;
     width: fit-content;
     font-size: 12px;
   }
@@ -473,8 +471,7 @@ footer .derecha-footer .email {
   }
   .cuestionario h2 {
     text-align: left;
-    -webkit-text-decoration: solid;
-            text-decoration: solid;
+    text-decoration: solid;
     background-color: #383838;
     box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
     border: rgba(255, 125, 3, 0.1176470588);
@@ -512,23 +509,29 @@ footer .derecha-footer .email {
   }
   .info-sobrenosotros {
     flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+  .info-sobrenosotros .contenido-texto {
+    text-align: center;
   }
   .info-sobrenosotros .contenido-texto h1 {
-    font-size: 23px !important;
-    text-align: center;
+    font-size: 21px !important;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .info-sobrenosotros .contenido-texto p {
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.4;
     padding: 0 10px;
-    text-align: center;
+    margin-top: 0;
   }
   .info-sobrenosotros .contenido-texto button {
     width: 100%;
+    margin: 15px auto 0;
     padding: 10px;
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 13px;
   }
   .info-sobrenosotros .contenido-img {
     order: 2;
@@ -538,7 +541,7 @@ footer .derecha-footer .email {
   .info-sobrenosotros .contenido-img img {
     width: 100px;
     height: auto;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .tienda {
     flex-direction: column;
@@ -664,7 +667,6 @@ footer .derecha-footer .email {
     font-size: 13px;
   }
   .footer-container .izquierda-footer button {
-    width: -moz-fit-content;
     width: fit-content;
     white-space: nowrap;
     padding: 2px 10px;
@@ -795,8 +797,7 @@ body {
 .productos01 img {
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin-bottom: 15px;
   border-radius: 15px;
 }
@@ -1021,8 +1022,7 @@ body {
 }
 .cuestionario h2 {
   text-align: left;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   background-color: #383838;
   box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
   border: rgba(255, 125, 3, 0.1176470588);
@@ -1045,8 +1045,7 @@ body {
 
 .titulos {
   text-align: center;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
+  text-decoration: solid;
   padding: 20px;
 }
 .titulos h2 {
@@ -1066,18 +1065,15 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
 .info-sobrenosotros {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 3rem;
-  max-width: 1200px;
-  margin: auto;
+  gap: 30px;
+  padding: 40px;
 }
 .info-sobrenosotros .contenido-texto {
   max-width: 500px;
@@ -1184,4 +1180,6 @@ body {
   margin-bottom: 10px;
   font-style: italic;
   color: rgb(0, 0, 0);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
