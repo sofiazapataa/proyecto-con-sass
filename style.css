@@ -18,6 +18,29 @@
   font-size: 12px;
 }
 
+@keyframes efecto {
+  0% {
+    background-color: #ff7d03;
+  }
+  50% {
+    transform: rotate(10deg);
+    transform: translate(-40px -30px);
+    transition: 3s;
+  }
+  75% {
+    transform: rotate(10deg);
+    transform: translate(40px 30px);
+    transition: 3s;
+    transform: scale(2.2);
+    background-color: rgba(2, 229, 51, 0.3568627451);
+  }
+  100% {
+    background-color: #ff7d03;
+    transform: rotate(10deg);
+    transform: translate(-40px -30px);
+    transition: 3s;
+  }
+}
 .barra-menu {
   background-color: #ff7d03;
   padding: 15px 30px;
@@ -180,9 +203,25 @@ footer .derecha-footer .email {
   padding: 10px 15px;
   white-space: nowrap;
 }
+.tienda .sidebar .buscar .buscar-inputs input[type=button]:focus {
+  background-color: rgba(2, 229, 51, 0.3568627451);
+  transform: rotate(10deg);
+  transform: translate(-70px -45px);
+  transition: 3s;
+}
+.tienda .sidebar .filtro {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 20px;
+}
 .tienda .sidebar .filtro input[type=range] {
   accent-color: #ff7d03;
   padding: 15px;
+}
+.tienda .sidebar .filtro label {
+  margin-bottom: 0;
+  white-space: nowrap;
 }
 .tienda .sidebar .precio-rango {
   display: flex;
@@ -332,6 +371,9 @@ footer .derecha-footer .email {
     border: none;
     cursor: pointer;
     font-size: 10px;
+  }
+  .productos01 div button:focus {
+    background-color: #ff7d03;
   }
   .productos01 div img {
     width: 100%;
@@ -568,6 +610,9 @@ footer .derecha-footer .email {
     padding: 12px;
     font-size: 14px;
   }
+  .tienda .sidebar .buscar .buscar-inputs input[type=text]:focus {
+    background-color: rgba(255, 94, 0, 0.358);
+  }
   .tienda .sidebar .buscar .buscar-inputs input[type=button] {
     background-color: #ff7d03;
     color: #383838;
@@ -578,6 +623,12 @@ footer .derecha-footer .email {
     transition: background-color 0.3s ease;
     padding: 10px;
     font-size: 14px;
+  }
+  .tienda .sidebar .buscar .buscar-inputs input[type=button]:focus {
+    background-color: rgba(2, 229, 51, 0.3568627451);
+    transform: rotate(10deg);
+    transform: translate(-70px -45px);
+    transition: 3s;
   }
   .tienda .filtro input[type=range] {
     width: 100%;
@@ -629,6 +680,9 @@ footer .derecha-footer .email {
     border: none;
     cursor: pointer;
     font-size: 10px;
+  }
+  .productos01-tienda div button:focus {
+    background-color: rgba(2, 229, 51, 0.3568627451);
   }
   .productos01-tienda div img {
     width: 100%;
@@ -726,6 +780,17 @@ body {
   color: #383838;
 }
 
+.mas-vendidos,
+.nosotros-box,
+.beneficios-box,
+.contacto-box,
+.preguntas-box,
+.tienda-box {
+  animation-name: efecto;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
 .mas-vendidos h2,
 .nosotros-box h2,
 .beneficios-box h2,
@@ -1127,11 +1192,11 @@ body {
 }
 .publicidad-sobrenosotros .contenido-texto-2 h2 {
   font-style: italic;
-  font-size: 35px;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 .publicidad-sobrenosotros .contenido-texto-2 h3 {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .beneficios-sobrenosotros {

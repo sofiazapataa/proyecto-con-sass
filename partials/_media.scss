@@ -75,6 +75,9 @@
                 cursor: pointer;
                 font-size: 10px;
              }
+             button:focus{
+                background-color: $naranja;
+             }
              img{
                  width: 100%;              
                  max-width: 180px;       
@@ -271,44 +274,48 @@
     }
 
 // sobre nosotros
+.info-sobrenosotros {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; // menos separación entre elementos
+  padding: 15px;
 
- .info-sobrenosotros {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
+  .contenido-texto {
+    text-align: center;
 
-    .contenido-texto {
-      h1 {
-        font-size: 23px !important;
-        text-align: center;
-      }
-
-      p {
-        font-size: 13px;
-        padding: 0 10px;
-        text-align: center;
-      }
-
-      button {
-        width: 100%;
-        padding: 10px;
-        font-size: 14px;
-        margin-top: 10px;
-      }
+    h1 {
+      font-size: 21px !important;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
 
-    .contenido-img {
-      order: 2;
-      display: flex;
-      justify-content: center;
+    p {
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 0 10px;
+      margin-top: 0;
+    }
 
-      img {
-        width: 100px;
-        height: auto;
-        margin-top: 15px;
-      }
+    button {
+      width: 100%;
+      margin: 15px auto 0;
+      padding: 10px;
+      font-size: 13px;
     }
   }
+
+  .contenido-img {
+    order: 2;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100px;
+      height: auto;
+      margin-top: 10px;
+    }
+  }
+}
     // tienda 
 
 .tienda {
@@ -337,11 +344,21 @@
           padding: 12px;
           font-size: 14px;
         }
+         input[type="text"]:focus{
+            background-color: rgba(255, 94, 0, 0.358)
+         }
 
          input[type="button"] {
           @include boton-personalizado($naranja, $negro); 
           padding: 10px;
           font-size: 14px;
+        }
+        input[type="button"]:focus{
+            background-color: $verde;
+            transform: rotate(10deg);
+            transform: translate(-70px -45px);
+            transition: 3s;
+
         }
         }
       }
@@ -349,8 +366,7 @@
     .filtro {
       input[type="range"] {
         width: 100%;
-      }
-
+    }
    .precio-rango {
       flex-direction: column;
       align-items: center;
@@ -401,6 +417,9 @@
                 border: none;
                 cursor: pointer;
                 font-size: 10px;
+             }
+             button:focus{
+                background-color: $verde;
              }
              img{
                  width: 100%;              

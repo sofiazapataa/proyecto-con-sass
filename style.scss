@@ -10,6 +10,7 @@
   box-sizing: border-box;
 }
 // HOME
+
 body{
     background-color: $gris;
 }
@@ -58,10 +59,15 @@ body{
 .preguntas-box,
 .tienda-box {
   @extend %caja-destacada;
+  animation-name: efecto;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
   h2 {
     font-size: 12px;
     margin-top: 5px;
   }
+
 }
 .info-2{
     h1{
@@ -389,13 +395,11 @@ body{
 // SOBRE NOSOTROS
 
 .info-sobrenosotros{
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 2rem; 
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 3rem;
-  max-width: 1200px;
-  margin: auto;
+  gap: 30px;
+  padding: 40px;
         .contenido-texto{
            max-width: 500px;
     text-align: left;
@@ -447,11 +451,11 @@ body{
               margin-top: 10px;
               h2{
                 font-style: italic;
-               font-size: 35px;
+               font-size: 25px;
                 margin-bottom: 10px;
               }
               h3{
-                  font-size: 18px;
+                  font-size: 15px;
               }
             }
 }

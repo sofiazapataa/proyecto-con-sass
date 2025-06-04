@@ -41,14 +41,27 @@
           padding: 10px 15px;
           white-space: nowrap; 
         }
+        input[type="button"]:focus{
+            background-color: $verde;
+            transform: rotate(10deg);
+            transform: translate(-70px -45px);
+            transition: 3s;
       }
     }
-
+  }
     .filtro {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  padding-bottom: 20px;
       input[type="range"] {
         accent-color: $naranja;
         padding: 15px;
       }
+     label {
+    margin-bottom: 0; 
+    white-space: nowrap; 
+  }
     }
 
     .precio-rango {
@@ -106,4 +119,5 @@
                 }
             }
 }
+
   

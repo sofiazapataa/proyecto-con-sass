@@ -86,13 +86,32 @@ $borde-cards: 15px;
   transition: background-color 0.3s ease;
 }
 
-// titulos centrados //
-@mixin titulo-centrado($size: 30px) {
-  font-size: $size;
-  text-align: center;
-  font-style: italic;
-}
+//  keyframes
 
+
+@keyframes efecto{
+0%{
+  background-color: $naranja;
+}
+50%{
+  transform: rotate(10deg);
+  transform: translate(-40px -30px);
+  transition: 3s;
+}
+75%{
+  transform: rotate(10deg);
+  transform: translate(40px 30px);
+  transition: 3s;
+  transform: scale(2.2);
+  background-color: $verde;
+}
+100%{
+  background-color: $naranja;
+  transform: rotate(10deg);
+  transform: translate(-40px -30px);
+  transition: 3s;
+}
+}
 
 // MIXIN
 // con parametros o sin parametros
