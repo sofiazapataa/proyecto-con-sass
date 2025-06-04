@@ -189,7 +189,6 @@
     width: 75px;
     height: 75px;
     }
-}
 // contactos 
 
     .contacto-box{
@@ -199,11 +198,16 @@
     .presentacion-contactos{
         h1{
         padding-top: 0;
-        font-size: 23px;
+        font-size: 25px !important;
     }
     h2{
-        font-size: 13px ;
+        font-size: 12px ;
     }
+    }
+    .info-contactos2{
+        h2{
+            font-size: 12px !important;
+        }
     }
     .formulario-contacto{
         h1{
@@ -239,63 +243,180 @@
             padding-top: 10px;
         }
         h3{
-            font-size: 13px;
-            margin-left: 12px;
+            font-size: 12px;
+            margin-left: 13px;
             font-weight:normal;
+            font-size: 13px;
+            margin-top: 10px;
         }
+        h4{
+            font-size: 10px;
+            margin-left: 13px;
+            font-weight:normal;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        ul {
+           display: block;
+           padding-left: 20px; // opcional, para sangría
         li{
-             list-style-type: circle ;
+             display: list-item;
+             margin-bottom: 5px;
              font-size: 13px;
+        }
         }
         .cuestionario-info{
              padding-bottom: 10px;
         }
     }
 
-    // sobre nosotros
+// sobre nosotros
 
-    .info-sobrenosotros{
-        padding-top: 0;
-        display: flex;
-        flex-direction: column;
-        .contenido-texto{
-            h1{
-                 font-size: 23px;
-                 padding-top: 0;
-                }
-            p{
-                 font-size: 12px;
-            }
-        }
+ .info-sobrenosotros {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+
+    .contenido-texto {
+      h1 {
+        font-size: 23px !important;
+        text-align: center;
+      }
+
+      p {
+        font-size: 13px;
+        padding: 0 10px;
+        text-align: center;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin-top: 10px;
+      }
     }
-   .publicidad-sobrenosotros {
-           padding-bottom: 10px;
-           margin-bottom: 55px; 
+
+    .contenido-img {
+      order: 2;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100px;
+        height: auto;
+        margin-top: 15px;
+      }
     }
-    .beneficios-box{
-        padding-top: 10px;
-    }
-    .beneficios-sobrenosotros{
-        h1{
-             font-size: 23px;
-        }
-        p{
-            font-size: 13px;
-            margin-bottom: 6px;
-        }
-    } 
-    .cuadros-info-nosotros {
-           margin-top: -20px; 
-           display: grid;
-           grid-template-columns: 1fr;
-           padding: 20px;
-           justify-items: center; 
-    }
+  }
     // tienda 
 
+.tienda {
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
 
+  .sidebar {
+    width: 100%;
+    gap: 15px;
 
-    // footer de todos
+    .buscar {
+      gap: 10px;
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      .buscar-inputs {
+        flex-direction: column;
+        align-items: stretch;
+        padding-bottom: 10px;
+
+         input[type="text"] {
+          width: 100%;
+          padding: 12px;
+          font-size: 14px;
+        }
+
+         input[type="button"] {
+          @include boton-personalizado($naranja, $negro); 
+          padding: 10px;
+          font-size: 14px;
+        }
+        }
+      }
+    }
+    .filtro {
+      input[type="range"] {
+        width: 100%;
+      }
+
+   .precio-rango {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        width: 100%;
+
+         input {
+          width: 100%;
+        }
+
+        p {
+          font-size: 12px;
+          margin-top: 5px;
+          color: $negro;
+        }
+      }
+    }
+  }
+}
+.productos01-tienda {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        div{
+             width: 200px; 
+             flex-shrink: 0;     
+             text-align: center;
+             padding: 6px;
+             border: 2px solid $naranja;
+             border-radius: 15px;
+             box-shadow: $sombra-cuadro;
+             h4{
+                font-size: 12px;
+                margin: 4px 0;
+             }
+             h3{
+                 font-size: 14px;
+                 margin: 3px 0;
+             }
+             button{
+                background-color: $naranja;
+                color: $negro;
+                padding: 8px 12px;
+                border-radius: $bordes-pequeños;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: none;
+                cursor: pointer;
+                font-size: 10px;
+             }
+             img{
+                 width: 100%;              
+                 max-width: 180px;       
+                 height: auto;
+                 margin-bottom: 3px;
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                }
+                img:hover{
+                    transform: scale(1.1); // efecto zoom 
+                }
+            }
+        }
+// footer de todos
 .footer-container{
     .logo-texto-footer{
         img{
@@ -337,6 +458,7 @@
              }
         }
     }   
+}
 }
 
 // tablet 
