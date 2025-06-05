@@ -1,0 +1,184 @@
+@use"./variables"as*;
+
+    // home
+
+@media only screen and (max-width: 480px) {    
+.info-2{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    h1{
+        color: $negro;
+        font-size: 15px;
+        font-style: italic;
+        text-align: center;
+        padding: 10px;
+        padding-top: 16px ;
+    }
+    h3{
+        color: $negro;
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+        max-width: 90%;
+        padding: 10px;
+        padding-top: 2px;
+    }
+}
+.form-select.w-25 {
+    width: 90% !important;
+    padding: 10px;
+    font-size: 14px;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+  }
+.productos01 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        div{
+             width: 200px; 
+             flex-shrink: 0;     
+             text-align: center;
+             padding: 6px;
+             border: 2px solid $naranja;
+             border-radius: 15px;
+             box-shadow: $sombra-cuadro;
+             h4{
+                font-size: 12px;
+                margin: 4px 0;
+             }
+             h3{
+                 font-size: 14px;
+                 margin: 3px 0;
+             }
+             button{
+                background-color: $naranja;
+                color: $negro;
+                padding: 8px 12px;
+                border-radius: $bordes-pequeños;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: none;
+                cursor: pointer;
+                font-size: 10px;
+             }
+             button:focus{
+                background-color: $naranja;
+             }
+             img{
+                 width: 100%;              
+                 max-width: 180px;       
+                 height: auto;
+                 margin-bottom: 3px;
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                }
+                img:hover{
+                    transform: scale(1.1); 
+                }
+            }
+        }
+    .publicidad-sobrenosotros{
+        h1{
+            font-size: 20px;
+            box-shadow: 0, 5px, 5px 5px $negro;
+        }
+        h3{
+             font-size: 14px ;
+        }
+}
+.categorias{ 
+    text-align: center;
+    padding: auto;
+    padding-top: 2px;
+    h2{
+         display: inline-block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: $naranja;
+        padding: 5px 15px;
+        border-radius: $bordes-pequeños;
+        margin: 0 auto;
+        width: auto;
+    }
+    h3{
+         padding: 6px;
+        font-size: 15px;
+    }
+    h4{
+         font-size: 12px;
+        max-width: 70%;
+        display: inline-block;
+        text-align: center;
+    }
+    .info-box{
+        padding-top: 12px;
+    }
+    .cuadros-info{
+        display: flex;
+        flex-direction: column;  
+        gap: 15px;
+        margin: 10px;
+        margin-top: 2px;
+        .cuadros{
+        display: flex;
+        margin: 10px;
+        padding: auto;
+    }
+    }
+  }
+.info-ecommerce {
+         flex-direction: column;
+         padding: 10px;
+         gap: 10px;
+         .columna {
+            justify-content: center;
+            margin-bottom: 10px;
+            img{
+                width: 100%;
+                 height: auto;
+                 border-radius: $borde-cards;
+            }
+        }
+         .contenido {
+            order: 2; 
+            text-align: center;
+            padding: 10px;
+            p{
+                 font-size: 12px !important;
+                 max-width: 90%;
+                 margin: auto;
+                 line-height: 1.6;
+                 padding: 10px;
+            }
+            img{
+                 width: 100%;
+                 height: auto;
+                 border-radius: $borde-cards;
+            }
+            .iconos{
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                img{
+                        width: 30px;
+                }
+            }
+            .logo{
+                 margin-bottom: 10px;
+                 border-radius: $bordes-pequeños;
+                 width: 80px;
+                 margin: 10px auto;
+                }
+        }
+      }
+.wp{
+    width: 75px;
+    height: 75px;
+    }
+}
