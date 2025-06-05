@@ -42,6 +42,28 @@
     transition: 3s;
   }
 }
+@keyframes movimiento-cards {
+  0% {
+    background-color: #ff7d03;
+  }
+  50% {
+    transform: rotate(10deg);
+    transform: translate(-10px -15px);
+    transition: 3s;
+  }
+  75% {
+    transform: rotate(10deg);
+    transform: translate(10px 15px);
+    transition: 3s;
+    transform: scale(2.2);
+  }
+  100% {
+    background-color: #ff7d03;
+    transform: rotate(10deg);
+    transform: translate(-10px -15px);
+    transition: 3s;
+  }
+}
 .barra-menu {
   background-color: #ff7d03;
   padding: 15px 30px;
@@ -119,6 +141,9 @@ footer .medio-footer a {
   margin: 5px 0;
   font-size: 14px;
 }
+footer .medio-footer a:hover {
+  transform: scale(1.03);
+}
 footer .izquierda-footer {
   max-width: 200px;
 }
@@ -126,6 +151,9 @@ footer .izquierda-footer h2 {
   font-size: 18px;
   margin-bottom: 10px;
   font-style: italic;
+}
+footer .izquierda-footer h2, footer .izquierda-footer h4:hover {
+  transform: scale(1.03);
 }
 footer .izquierda-footer button {
   background: none;
@@ -280,6 +308,13 @@ footer .derecha-footer .email {
   transition: background-color 0.3s ease;
   margin-bottom: 10px;
 }
+.productos01-tienda div button:focus {
+  transform: scale(1.02);
+  background-color: rgba(2, 229, 51, 0.3568627451);
+}
+.productos01-tienda div:hover {
+  transform: scale(1.04);
+}
 
 .info-sobrenosotros {
   display: flex;
@@ -382,6 +417,10 @@ footer .derecha-footer .email {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
+  animation-name: movimiento-cards;
+  animation-duration: infinite;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
 }
 .cuadros-info-nosotros div h2 {
   font-size: 18px;
@@ -393,6 +432,9 @@ footer .derecha-footer .email {
   margin-bottom: 10px;
   font-style: italic;
   color: rgb(0, 0, 0);
+}
+.cuadros-info-nosotros div:hover {
+  transform: scale(1.03);
 }
 
 .presentacion-contactos {
@@ -618,6 +660,10 @@ footer .derecha-footer .email {
     width: 40px;
     height: 40px;
     margin-bottom: 10px;
+    animation-name: movimiento-cards;
+    animation-duration: infinite;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
   }
   .cuadros-info-nosotros div h2 {
     font-size: 18px;
@@ -632,6 +678,279 @@ footer .derecha-footer .email {
   }
 }
 @media only screen and (max-width: 480px) {
+  .mas-vendidos,
+  .nosotros-box,
+  .beneficios-box,
+  .contacto-box,
+  .preguntas-box,
+  .tienda-box {
+    background-color: #ff7d03;
+    border-radius: 10px;
+    box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+    color: #383838;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 12px;
+  }
+  .mas-vendidos h2,
+  .nosotros-box h2,
+  .beneficios-box h2,
+  .contacto-box h2,
+  .preguntas-box h2,
+  .tienda-box h2 {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .contacto-box {
+    padding: 12px 12px 5px 12px;
+  }
+  .presentacion-contactos h1 {
+    padding-top: 0;
+    font-size: 25px !important;
+  }
+  .presentacion-contactos h2 {
+    font-size: 12px;
+  }
+  .info-contactos2 h2 {
+    font-size: 12px !important;
+  }
+  .formulario-contacto h1 {
+    font-size: 23px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .titulos h1 {
+    font-size: 24px;
+    padding-top: 0;
+  }
+  .titulos p {
+    font-size: 12px;
+  }
+  .cuestionario h2 {
+    text-align: left;
+    text-decoration: solid;
+    background-color: #383838;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
+    border: rgba(255, 125, 3, 0.1176470588);
+    border-radius: 10px;
+    color: #ff7d03;
+    padding: 10px;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .cuestionario h3 {
+    font-size: 12px;
+    margin-left: 13px;
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .cuestionario h4 {
+    font-size: 10px;
+    margin-left: 13px;
+    font-weight: normal;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .cuestionario ul {
+    display: block;
+    padding-left: 20px;
+  }
+  .cuestionario ul li {
+    display: list-item;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  .cuestionario .cuestionario-info {
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .tienda {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+  .tienda .sidebar {
+    width: 100%;
+    gap: 15px;
+  }
+  .tienda .sidebar .buscar {
+    gap: 10px;
+  }
+  .tienda .sidebar .buscar label {
+    margin-bottom: 5px;
+  }
+  .tienda .sidebar .buscar .buscar-inputs {
+    flex-direction: column;
+    align-items: stretch;
+    padding-bottom: 10px;
+  }
+  .tienda .sidebar .buscar .buscar-inputs input[type=text] {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+  .tienda .sidebar .buscar .buscar-inputs input[type=text]:focus {
+    background-color: rgba(255, 94, 0, 0.358);
+  }
+  .tienda .sidebar .buscar .buscar-inputs input[type=button] {
+    background-color: #ff7d03;
+    color: #383838;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .tienda .sidebar .buscar .buscar-inputs input[type=button]:focus {
+    background-color: rgba(2, 229, 51, 0.3568627451);
+    transform: rotate(10deg);
+    transform: translate(-70px -45px);
+    transition: 3s;
+  }
+  .tienda .filtro input[type=range] {
+    width: 100%;
+  }
+  .tienda .filtro .precio-rango {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tienda .filtro .precio-rango div {
+    width: 100%;
+  }
+  .tienda .filtro .precio-rango div input {
+    width: 100%;
+  }
+  .tienda .filtro .precio-rango div p {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #383838;
+  }
+  .productos01-tienda {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .productos01-tienda div {
+    width: 200px;
+    flex-shrink: 0;
+    text-align: center;
+    padding: 6px;
+    border: 2px solid #ff7d03;
+    border-radius: 15px;
+    box-shadow: box-shadow 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  .productos01-tienda div h4 {
+    font-size: 12px;
+    margin: 4px 0;
+  }
+  .productos01-tienda div h3 {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+  .productos01-tienda div button {
+    background-color: #ff7d03;
+    color: #383838;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .productos01-tienda div button:focus {
+    background-color: rgba(2, 229, 51, 0.3568627451);
+  }
+  .productos01-tienda div img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .productos01-tienda div:hover {
+    transform: scale(1.03);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .footer-container .logo-texto-footer img {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container .logo-texto-footer p {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  .footer-container .medio-footer h2 {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .footer-container .medio-footer a {
+    font-size: 12px;
+    gap: 5px;
+  }
+  .footer-container .izquierda-footer h2 {
+    font-size: 15px;
+  }
+  .footer-container .izquierda-footer h4 {
+    font-size: 13px;
+  }
+  .footer-container .izquierda-footer button {
+    width: fit-content;
+    white-space: nowrap;
+    padding: 2px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  .footer-container .izquierda-footer button .icono-button {
+    width: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .mas-vendidos,
+  .nosotros-box,
+  .beneficios-box,
+  .contacto-box,
+  .preguntas-box,
+  .tienda-box {
+    background-color: #ff7d03;
+    border-radius: 10px;
+    box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+    color: #383838;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 12px;
+  }
+  .mas-vendidos h2,
+  .nosotros-box h2,
+  .beneficios-box h2,
+  .contacto-box h2,
+  .preguntas-box h2,
+  .tienda-box h2 {
+    font-size: 12px;
+    margin-top: 5px;
+  }
   .info-2 {
     display: flex;
     align-items: center;
@@ -759,35 +1078,40 @@ footer .derecha-footer .email {
     padding: auto;
   }
   .info-ecommerce {
+    display: flex !important;
     flex-direction: column;
-    padding: 10px;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
   }
   .info-ecommerce .columna {
+    width: 200px;
+    display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-  }
-  .info-ecommerce .columna img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
   }
   .info-ecommerce .contenido {
-    order: 2;
     text-align: center;
-    padding: 10px;
-  }
-  .info-ecommerce .contenido p {
-    font-size: 12px !important;
-    max-width: 90%;
-    margin: auto;
-    line-height: 1.6;
     padding: 10px;
   }
   .info-ecommerce .contenido img {
     width: 100%;
-    height: auto;
     border-radius: 15px;
+  }
+  .info-ecommerce .contenido .contenido {
+    text-align: center;
+    max-width: 300px;
+    padding: 10px;
+  }
+  .info-ecommerce .contenido .contenido .logo {
+    width: 60px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  .info-ecommerce .contenido .contenido p {
+    font-size: 10px !important;
+    margin: auto;
   }
   .info-ecommerce .contenido .iconos {
     margin-top: 10px;
@@ -798,254 +1122,9 @@ footer .derecha-footer .email {
   .info-ecommerce .contenido .iconos img {
     width: 30px;
   }
-  .info-ecommerce .contenido .logo {
-    margin-bottom: 10px;
-    border-radius: 10px;
-    width: 80px;
-    margin: 10px auto;
-  }
   .wp {
     width: 75px;
     height: 75px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .mas-vendidos,
-  .nosotros-box,
-  .beneficios-box,
-  .contacto-box,
-  .preguntas-box,
-  .tienda-box {
-    background-color: #ff7d03;
-    border-radius: 10px;
-    box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
-    color: #383838;
-    padding: 5px 10px;
-    text-align: center;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: fit-content;
-    font-size: 12px;
-  }
-  .mas-vendidos h2,
-  .nosotros-box h2,
-  .beneficios-box h2,
-  .contacto-box h2,
-  .preguntas-box h2,
-  .tienda-box h2 {
-    font-size: 12px;
-    margin-top: 5px;
-  }
-  .contacto-box {
-    padding: 12px 12px 5px 12px;
-  }
-  .presentacion-contactos h1 {
-    padding-top: 0;
-    font-size: 25px !important;
-  }
-  .presentacion-contactos h2 {
-    font-size: 12px;
-  }
-  .info-contactos2 h2 {
-    font-size: 12px !important;
-  }
-  .formulario-contacto h1 {
-    font-size: 23px;
-    text-decoration: underline;
-    display: flex;
-    justify-content: left;
-  }
-  .titulos h1 {
-    font-size: 24px;
-    padding-top: 0;
-  }
-  .titulos p {
-    font-size: 12px;
-  }
-  .cuestionario h2 {
-    text-align: left;
-    text-decoration: solid;
-    background-color: #383838;
-    box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
-    border: rgba(255, 125, 3, 0.1176470588);
-    border-radius: 10px;
-    color: #ff7d03;
-    padding: 10px;
-    font-size: 15px;
-    padding-top: 10px;
-  }
-  .cuestionario h3 {
-    font-size: 12px;
-    margin-left: 13px;
-    font-weight: normal;
-    font-size: 13px;
-    margin-top: 10px;
-  }
-  .cuestionario h4 {
-    font-size: 10px;
-    margin-left: 13px;
-    font-weight: normal;
-    font-size: 13px;
-    margin-top: 10px;
-  }
-  .cuestionario ul {
-    display: block;
-    padding-left: 20px;
-  }
-  .cuestionario ul li {
-    display: list-item;
-    margin-bottom: 5px;
-    font-size: 13px;
-  }
-  .cuestionario .cuestionario-info {
-    padding-bottom: 10px;
-  }
-  .tienda {
-    flex-direction: column;
-    padding: 10px;
-    gap: 15px;
-  }
-  .tienda .sidebar {
-    width: 100%;
-    gap: 15px;
-  }
-  .tienda .sidebar .buscar {
-    gap: 10px;
-  }
-  .tienda .sidebar .buscar label {
-    margin-bottom: 5px;
-  }
-  .tienda .sidebar .buscar .buscar-inputs {
-    flex-direction: column;
-    align-items: stretch;
-    padding-bottom: 10px;
-  }
-  .tienda .sidebar .buscar .buscar-inputs input[type=text] {
-    width: 100%;
-    padding: 12px;
-    font-size: 14px;
-  }
-  .tienda .sidebar .buscar .buscar-inputs input[type=text]:focus {
-    background-color: rgba(255, 94, 0, 0.358);
-  }
-  .tienda .sidebar .buscar .buscar-inputs input[type=button] {
-    background-color: #ff7d03;
-    color: #383838;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    padding: 10px;
-    font-size: 14px;
-  }
-  .tienda .sidebar .buscar .buscar-inputs input[type=button]:focus {
-    background-color: rgba(2, 229, 51, 0.3568627451);
-    transform: rotate(10deg);
-    transform: translate(-70px -45px);
-    transition: 3s;
-  }
-  .tienda .filtro input[type=range] {
-    width: 100%;
-  }
-  .tienda .filtro .precio-rango {
-    flex-direction: column;
-    align-items: center;
-  }
-  .tienda .filtro .precio-rango div {
-    width: 100%;
-  }
-  .tienda .filtro .precio-rango div input {
-    width: 100%;
-  }
-  .tienda .filtro .precio-rango div p {
-    font-size: 12px;
-    margin-top: 5px;
-    color: #383838;
-  }
-  .productos01-tienda {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-  .productos01-tienda div {
-    width: 200px;
-    flex-shrink: 0;
-    text-align: center;
-    padding: 6px;
-    border: 2px solid #ff7d03;
-    border-radius: 15px;
-    box-shadow: box-shadow 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  .productos01-tienda div h4 {
-    font-size: 12px;
-    margin: 4px 0;
-  }
-  .productos01-tienda div h3 {
-    font-size: 14px;
-    margin: 3px 0;
-  }
-  .productos01-tienda div button {
-    background-color: #ff7d03;
-    color: #383838;
-    padding: 8px 12px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 10px;
-  }
-  .productos01-tienda div button:focus {
-    background-color: rgba(2, 229, 51, 0.3568627451);
-  }
-  .productos01-tienda div img {
-    width: 100%;
-    max-width: 180px;
-    height: auto;
-    margin-bottom: 3px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .productos01-tienda div img:hover {
-    transform: scale(1.1);
-  }
-  .footer-container .logo-texto-footer img {
-    width: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-container .logo-texto-footer p {
-    font-size: 12px;
-    margin-bottom: 2px;
-  }
-  .footer-container .medio-footer h2 {
-    font-size: 15px;
-    margin-top: 5px;
-  }
-  .footer-container .medio-footer a {
-    font-size: 12px;
-    gap: 5px;
-  }
-  .footer-container .izquierda-footer h2 {
-    font-size: 15px;
-  }
-  .footer-container .izquierda-footer h4 {
-    font-size: 13px;
-  }
-  .footer-container .izquierda-footer button {
-    width: fit-content;
-    white-space: nowrap;
-    padding: 2px 10px;
-    font-size: 12px;
-    border-radius: 10px;
-  }
-  .footer-container .izquierda-footer button .icono-button {
-    width: 15px;
   }
 }
 * {
@@ -1087,14 +1166,17 @@ body {
   box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
   margin: auto;
 }
-.info img {
+.info div img {
   width: 50px;
   height: 50px;
 }
-.info h2 {
+.info div h2 {
   margin: 0;
   font-size: 16px;
   color: #383838;
+}
+.info div:hover {
+  transform: scale(1.03);
 }
 
 .mas-vendidos,
@@ -1267,6 +1349,9 @@ body {
   border-radius: 20px;
   height: auto;
 }
+.info-ecommerce .columna:first-child img:hover {
+  transform: scale(1.03);
+}
 .info-ecommerce .columna:last-child {
   grid-area: derecha;
   display: flex;
@@ -1276,6 +1361,9 @@ body {
   max-width: 100%;
   border-radius: 20px;
   height: auto;
+}
+.info-ecommerce .columna:last-child img:hover {
+  transform: scale(1.03);
 }
 .info-ecommerce .contenido {
   grid-area: centro;

@@ -1,0 +1,55 @@
+@use"./variables"as*;
+
+@media only screen and (max-width: 480px) {
+// preguntas frecuentes 
+
+    .titulos{
+        h1{
+            font-size: 24px;
+            padding-top: 0 ;
+        }
+        p{
+             font-size: 12px;
+        }
+    } 
+    .cuestionario{
+        h2{
+            text-align: left;
+            text-decoration: solid;
+            background-color: $negro;
+            box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
+            border: #ff7d031e;
+            border-radius: $bordes-pequeños;
+            color: $naranja;
+            padding: 10px;
+            font-size: 15px;
+            padding-top: 10px;
+        }
+        h3{
+            font-size: 12px;
+            margin-left: 13px;
+            font-weight:normal;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        h4{
+            font-size: 10px;
+            margin-left: 13px;
+            font-weight:normal;
+            font-size: 13px;
+            margin-top: 10px;
+        }
+        ul {
+           display: block;
+           padding-left: 20px; // opcional, para sangría
+        li{
+             display: list-item;
+             margin-bottom: 5px;
+             font-size: 13px;
+        }
+        }
+        .cuestionario-info{
+             padding-bottom: 10px;
+        }
+    }
+}

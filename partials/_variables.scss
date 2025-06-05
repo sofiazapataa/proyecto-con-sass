@@ -115,6 +115,29 @@ $borde-cards: 15px;
 }
 }
 
+
+@keyframes movimiento-cards{
+0%{
+  background-color: $naranja;
+}
+50%{
+  transform: rotate(10deg);
+  transform: translate(-10px -15px);
+  transition: 3s;
+}
+75%{
+  transform: rotate(10deg);
+  transform: translate(10px 15px);
+  transition: 3s;
+  transform: scale(2.2);
+}
+100%{
+  background-color: $naranja;
+  transform: rotate(10deg);
+  transform: translate(-10px -15px);
+  transition: 3s;
+}
+}
 // MIXIN
 // con parametros o sin parametros
 // sin parametros: no esta atado a nada, lo creo y puedo usarlo cuando lo necesite
@@ -126,3 +149,19 @@ $borde-cards: 15px;
 
 // MEZCLA
 // con parametros y sin parametros
+
+
+// tablet 
+
+// @media only screen and (min-width: 481px) and (max-width: 978px) {
+//     header{
+
+//     }
+// } 
+
+// desktop 
+// @media only screen and (min-width:979px) {
+//     header{
+
+//     }
+// } 

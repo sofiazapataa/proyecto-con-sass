@@ -78,7 +78,9 @@ footer{
     text-decoration: none;
     margin: 5px 0;
     font-size: 14px;
-
+        }
+        a:hover{
+            transform: scale(1.03);
         }
     }
     .izquierda-footer{
@@ -88,6 +90,9 @@ footer{
     margin-bottom: 10px;
     font-style: italic;
          }
+         h2,h4:hover{
+            transform: scale(1.03);
+        }
          button {
     background: none;
     border: solid;

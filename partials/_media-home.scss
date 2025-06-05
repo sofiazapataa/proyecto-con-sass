@@ -2,7 +2,19 @@
 
     // home
 
-@media only screen and (max-width: 480px) {    
+@media only screen and (max-width: 480px) { 
+    .mas-vendidos,
+  .nosotros-box,
+  .beneficios-box,
+  .contacto-box,
+  .preguntas-box,
+  .tienda-box {
+    @include caja-destacada-mobile;
+    h2 {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }   
 .info-2{
         display: flex;
         align-items: center;
@@ -132,53 +144,53 @@
     }
   }
 .info-ecommerce {
-         flex-direction: column;
-         padding: 10px;
-         gap: 10px;
-         .columna {
-            justify-content: center;
-            margin-bottom: 10px;
-            img{
-                width: 100%;
-                 height: auto;
-                 border-radius: $borde-cards;
-            }
-        }
-         .contenido {
-            order: 2; 
+  display: flex !important;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap; 
+    .columna {
+         width: 200px; 
+         display: flex;
+         justify-content: center;
+       }
+    .contenido {
             text-align: center;
             padding: 10px;
-            p{
-                 font-size: 12px !important;
-                 max-width: 90%;
+            img {
+             width: 100%;
+             border-radius: 15px;
+            }
+             .contenido {
+               text-align: center;
+               max-width: 300px;
+               padding: 10px;
+               .logo{
+                 width: 60px;
+                 margin-bottom: 10px;
+                 border-radius: 10px;
+               }
+               p{
+                 font-size: 10px !important;
                  margin: auto;
-                 line-height: 1.6;
-                 padding: 10px;
+               }
             }
-            img{
-                 width: 100%;
-                 height: auto;
-                 border-radius: $borde-cards;
-            }
-            .iconos{
+            .iconos {
                 margin-top: 10px;
                 display: flex;
                 justify-content: center;
                 gap: 10px;
-                img{
-                        width: 30px;
-                }
-            }
-            .logo{
-                 margin-bottom: 10px;
-                 border-radius: $bordes-pequeños;
-                 width: 80px;
-                 margin: 10px auto;
-                }
-        }
-      }
+             img {
+                width: 30px;
+             }
+    }
+}
+}
 .wp{
     width: 75px;
     height: 75px;
     }
+
 }

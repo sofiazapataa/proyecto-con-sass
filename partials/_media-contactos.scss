@@ -1,0 +1,45 @@
+@use"./variables"as*;
+
+@media only screen and (max-width: 480px) {
+  .mas-vendidos,
+  .nosotros-box,
+  .beneficios-box,
+  .contacto-box,
+  .preguntas-box,
+  .tienda-box {
+    @include caja-destacada-mobile;
+    h2 {
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  }
+
+// contactos 
+
+    .contacto-box{
+        padding: 12px 12px 5px 12px;
+    }
+
+    .presentacion-contactos{
+        h1{
+        padding-top: 0;
+        font-size: 25px !important;
+    }
+    h2{
+        font-size: 12px ;
+    }
+    }
+    .info-contactos2{
+        h2{
+            font-size: 12px !important;
+        }
+    }
+    .formulario-contacto{
+        h1{
+             font-size: 23px;
+             text-decoration: underline;
+             display: flex;
+             justify-content: left;
+            }
+    } 
+}

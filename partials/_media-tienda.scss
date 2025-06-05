@@ -1,0 +1,123 @@
+@use"./variables"as*;
+
+@media only screen and (max-width: 480px) {
+// tienda 
+.tienda {
+  flex-direction: column;
+  padding: 10px;
+  gap: 15px;
+
+  .sidebar {
+    width: 100%;
+    gap: 15px;
+
+    .buscar {
+      gap: 10px;
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      .buscar-inputs {
+        flex-direction: column;
+        align-items: stretch;
+        padding-bottom: 10px;
+
+         input[type="text"] {
+          width: 100%;
+          padding: 12px;
+          font-size: 14px;
+        }
+         input[type="text"]:focus{
+            background-color: rgba(255, 94, 0, 0.358)
+         }
+
+         input[type="button"] {
+          @include boton-personalizado($naranja, $negro); 
+          padding: 10px;
+          font-size: 14px;
+        }
+        input[type="button"]:focus{
+            background-color: $verde;
+            transform: rotate(10deg);
+            transform: translate(-70px -45px);
+            transition: 3s;
+
+        }
+        }
+      }
+    }
+    .filtro {
+      input[type="range"] {
+        width: 100%;
+    }
+   .precio-rango {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        width: 100%;
+
+         input {
+          width: 100%;
+        }
+
+        p {
+          font-size: 12px;
+          margin-top: 5px;
+          color: $negro;
+        }
+      }
+    }
+  }
+}
+.productos01-tienda {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        div{
+             width: 200px; 
+             flex-shrink: 0;     
+             text-align: center;
+             padding: 6px;
+             border: 2px solid $naranja;
+             border-radius: 15px;
+             box-shadow: $sombra-cuadro;
+             h4{
+                font-size: 12px;
+                margin: 4px 0;
+             }
+             h3{
+                 font-size: 14px;
+                 margin: 3px 0;
+             }
+             button{
+                background-color: $naranja;
+                color: $negro;
+                padding: 8px 12px;
+                border-radius: $bordes-pequeños;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: none;
+                cursor: pointer;
+                font-size: 10px;
+             }
+             button:focus{
+                background-color: $verde;
+             }
+             img{
+                 width: 100%;              
+                 max-width: 180px;       
+                 height: auto;
+                 margin-bottom: 3px;
+                 display: block;
+                 margin-left: auto;
+                 margin-right: auto;
+                }
+                
+            }
+            div:hover{
+                transform: scale(1.03);
+            }
+        }
+    }
