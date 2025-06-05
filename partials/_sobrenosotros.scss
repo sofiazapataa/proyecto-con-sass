@@ -1,0 +1,118 @@
+@use"./variables" as*;
+
+// SOBRE NOSOTROS
+
+.info-sobrenosotros{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+        .contenido-texto{
+           max-width: 500px;
+    text-align: left;
+                h1{
+                text-align: left;
+                margin: 20px;
+                padding: 10px;
+                padding-bottom: 10px;
+                  font-size: 2rem;
+  margin-bottom: 1rem;
+              }
+                p{
+                margin: 20px;
+                padding: 10px;
+                padding-top: 1px;
+                font-size: 1rem;
+                line-height: 1.6;
+                margin-bottom: 1.5rem;
+              }
+          }
+}
+.contenido-img{
+    display: flex;
+    justify-content: center;
+    img{
+      width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+    }
+ }
+.publicidad-sobrenosotros{
+  height: 300px;
+  display: flex;
+  border-radius: 15px;
+  padding: 30px;
+  color: rgb(235, 228, 228);
+  background-image:
+    linear-gradient(to right, rgba(255, 119, 0, 0.313)),
+    url('./medios/banner\ sobre\ nosotros.jpg'); 
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+   margin-bottom: 40px;
+         .contenido-texto-2 {
+              max-width: 600px;
+              margin-top: 10px;
+              h2{
+                font-style: italic;
+               font-size: 35px;
+                margin-bottom: 10px;
+              }
+              h3{
+                  font-size: 18px;
+              }
+            }
+}
+.beneficios-sobrenosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 870px;
+    margin-bottom: 10px;
+  }
+}
+
+.cuadros-info-nosotros{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    div{
+      background-color:$naranja;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: $sombra-cards;
+    img{
+       width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    }
+    h2{
+       font-size: 18px;
+    margin-bottom: 10px;
+    color: $negro;
+    }
+    p{
+      font-size: 16px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color:  rgb(0, 0, 0);
+    }
+  }
+}

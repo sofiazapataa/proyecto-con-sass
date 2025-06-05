@@ -1,0 +1,54 @@
+@use"./variables"as*;
+
+// PREGUNTAS FRECUENTES
+
+.cuestionario{
+    padding-left: 16px;
+    h2{
+        text-align: left;
+        text-decoration: solid;
+        background-color: $negro;
+        box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
+        border: #ff7d031e;
+        border-radius: 10px;
+        color: $naranja;
+        padding: 20px;
+        font-size: 20px;
+
+    }
+    li{
+        list-style: none;
+    }
+    h3{
+      font-size: 17px;
+      margin-left: 12px;
+    }
+    h4{
+      font-size: 15px;
+      margin-left: 12px;
+    }
+}
+.titulos{
+    text-align: center;
+    text-decoration: solid;
+    padding: 20px;
+    h2{
+        margin: 20px;
+        font-size: 18px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    h1{
+      font-size: 25px;
+    }
+    p{
+    color: black;
+    padding: 7px 10px ;
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+    }

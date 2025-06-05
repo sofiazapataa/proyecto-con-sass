@@ -1,9 +1,10 @@
 .mas-vendidos,
+.categorias-box,
 .nosotros-box,
 .beneficios-box,
 .contacto-box,
 .preguntas-box,
-.tienda-box, .categorias h2 {
+.tienda-box {
   background-color: #ff7d03;
   border-radius: 10px;
   box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
@@ -280,6 +281,260 @@ footer .derecha-footer .email {
   margin-bottom: 10px;
 }
 
+.info-sobrenosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+.info-sobrenosotros .contenido-texto {
+  max-width: 500px;
+  text-align: left;
+}
+.info-sobrenosotros .contenido-texto h1 {
+  text-align: left;
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.info-sobrenosotros .contenido-texto p {
+  margin: 20px;
+  padding: 10px;
+  padding-top: 1px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contenido-img {
+  display: flex;
+  justify-content: center;
+}
+.contenido-img img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.publicidad-sobrenosotros {
+  height: 300px;
+  display: flex;
+  border-radius: 15px;
+  padding: 30px;
+  color: rgb(235, 228, 228);
+  background-image: linear-gradient(to right, rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
+  margin-bottom: 40px;
+}
+.publicidad-sobrenosotros .contenido-texto-2 {
+  max-width: 600px;
+  margin-top: 10px;
+}
+.publicidad-sobrenosotros .contenido-texto-2 h2 {
+  font-style: italic;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.publicidad-sobrenosotros .contenido-texto-2 h3 {
+  font-size: 18px;
+}
+
+.beneficios-sobrenosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.beneficios-sobrenosotros h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.beneficios-sobrenosotros p {
+  font-size: 16px;
+  max-width: 870px;
+  margin-bottom: 10px;
+}
+
+.cuadros-info-nosotros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+.cuadros-info-nosotros div {
+  background-color: #ff7d03;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+}
+.cuadros-info-nosotros div img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.cuadros-info-nosotros div h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #383838;
+}
+.cuadros-info-nosotros div p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+.presentacion-contactos {
+  position: relative;
+}
+.presentacion-contactos h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 20px;
+  margin: 20px;
+}
+.presentacion-contactos h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+}
+.presentacion-contactos p {
+  text-align: center;
+  font-style: italic;
+  margin: 20px;
+}
+
+.info-contactos {
+  position: relative;
+  text-align: center;
+}
+.info-contactos h2 {
+  margin-top: 60px;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.info-contactos p {
+  margin-top: 5px;
+  margin: 20px;
+}
+.info-contactos img {
+  width: 30px;
+  top: 40px;
+}
+
+.horarios-contactos h2 {
+  text-decoration: underline;
+  margin: 20px;
+}
+.horarios-contactos p {
+  margin: 20px;
+}
+
+.info-contactos2 {
+  position: relative;
+}
+.info-contactos2 img {
+  width: 20px;
+  margin: 20px;
+}
+.info-contactos2 .telefono {
+  top: -1px;
+  left: 24px;
+  font-size: 18px;
+  position: absolute;
+  margin: 20px;
+}
+.info-contactos2 .mail {
+  top: 60px;
+  left: 28px;
+  font-size: 18px;
+  position: absolute;
+  margin: 20px;
+}
+.info-contactos2 .ubicacion {
+  top: 120px;
+  left: 28px;
+  margin: 20px;
+  font-size: 18px;
+  position: absolute;
+}
+
+.formulario-contacto h1 {
+  font-size: 25px;
+  padding-top: 8px;
+  padding-left: 18px;
+}
+.formulario-contacto div {
+  margin: 20px;
+}
+
+.terminos-y-condiciones {
+  margin: 20px;
+}
+
+.cuestionario {
+  padding-left: 16px;
+}
+.cuestionario h2 {
+  text-align: left;
+  text-decoration: solid;
+  background-color: #383838;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
+  border: rgba(255, 125, 3, 0.1176470588);
+  border-radius: 10px;
+  color: #ff7d03;
+  padding: 20px;
+  font-size: 20px;
+}
+.cuestionario li {
+  list-style: none;
+}
+.cuestionario h3 {
+  font-size: 17px;
+  margin-left: 12px;
+}
+.cuestionario h4 {
+  font-size: 15px;
+  margin-left: 12px;
+}
+
+.titulos {
+  text-align: center;
+  text-decoration: solid;
+  padding: 20px;
+}
+.titulos h2 {
+  margin: 20px;
+  font-size: 18px;
+  font-style: italic;
+  text-decoration: underline;
+}
+.titulos h1 {
+  font-size: 25px;
+}
+.titulos p {
+  color: black;
+  padding: 7px 10px;
+  text-align: center;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+}
+
 @media only screen and (max-width: 480px) {
   .mas-vendidos,
   .nosotros-box,
@@ -549,31 +804,37 @@ footer .derecha-footer .email {
   .cuestionario .cuestionario-info {
     padding-bottom: 10px;
   }
+  .nosotros-box {
+    margin-bottom: 5px;
+  }
   .info-sobrenosotros {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 15px;
+    padding: 10px;
+    gap: 5px;
   }
   .info-sobrenosotros .contenido-texto {
     text-align: center;
   }
   .info-sobrenosotros .contenido-texto h1 {
-    font-size: 21px !important;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    max-width: 220px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.2;
   }
   .info-sobrenosotros .contenido-texto p {
     font-size: 12px;
-    line-height: 1.4;
-    padding: 0 10px;
-    margin-top: 0;
+    line-height: 1.5;
+    padding: 0 15px;
+    max-width: 320px;
+    margin: 0 auto;
   }
   .info-sobrenosotros .contenido-texto button {
-    width: 100%;
-    margin: 15px auto 0;
-    padding: 10px;
     font-size: 13px;
+    padding: 10px;
+    margin-top: 12px;
+    width: 100%;
   }
   .info-sobrenosotros .contenido-img {
     order: 2;
@@ -584,6 +845,58 @@ footer .derecha-footer .email {
     width: 100px;
     height: auto;
     margin-top: 10px;
+  }
+  .publicidad-sobrenosotros .contenido-texto-2 h2 {
+    font-size: 23px !important;
+  }
+  .publicidad-sobrenosotros .contenido-texto-2 h3 {
+    font-size: 15px !important;
+  }
+  .beneficios-sobrenosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .beneficios-sobrenosotros h3 {
+    font-size: 23px !important;
+    margin-bottom: 10px;
+  }
+  .beneficios-sobrenosotros p {
+    font-size: 13px !important;
+    max-width: 870px;
+    margin-bottom: 10px;
+  }
+  .cuadros-info-nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .cuadros-info-nosotros div {
+    background-color: #ff7d03;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
+  }
+  .cuadros-info-nosotros div img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .cuadros-info-nosotros div h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #383838;
+  }
+  .cuadros-info-nosotros div p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: rgb(0, 0, 0);
   }
   .tienda {
     flex-direction: column;
@@ -781,6 +1094,7 @@ body {
 }
 
 .mas-vendidos,
+.categorias-box,
 .nosotros-box,
 .beneficios-box,
 .contacto-box,
@@ -792,6 +1106,7 @@ body {
   animation-delay: 1s;
 }
 .mas-vendidos h2,
+.categorias-box h2,
 .nosotros-box h2,
 .beneficios-box h2,
 .contacto-box h2,
@@ -821,7 +1136,7 @@ body {
   border-radius: 15px;
   padding: 30px;
   color: #ffffff;
-  background-image: linear-gradient(to right, #ff7d03, rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
+  background-image: linear-gradient(to right, rgba(255, 119, 0, 0.477)), url("./medios/banner3.jpg");
   background-size: cover;
   background-position: center;
   margin: 20px;
@@ -832,7 +1147,6 @@ body {
   margin-top: 10px;
 }
 .publicidad-sobrenosotros .contenido-texto h1 {
-  font-style: italic;
   font-size: 35px;
   margin-bottom: 10px;
 }
@@ -857,7 +1171,7 @@ body {
   transition: transform 0.2s ease;
 }
 .productos01 div:hover {
-  transform: scale(1.02);
+  transform: scale(1.08);
 }
 .productos01 img {
   max-width: 100%;
@@ -890,20 +1204,19 @@ body {
   background-color: rgba(2, 229, 51, 0.3568627451);
 }
 
-.categorias h3 {
+.categorias .info-box h3 {
   font-style: italic;
   font-size: large;
   color: #383838;
   text-align: center;
   padding-top: 10px;
 }
-.categorias h4 {
+.categorias .info-box h4 {
   font-size: 12px;
   text-align: center;
   color: #383838;
 }
-
-.cuadros-info {
+.categorias .cuadros-info {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
@@ -912,8 +1225,7 @@ body {
   padding-right: 15px;
   padding-top: 10px;
 }
-
-.cuadro {
+.categorias .cuadro {
   background-color: #ff7d03;
   color: #383838;
   padding: 20px;
@@ -926,8 +1238,7 @@ body {
   padding: auto;
   text-align: center;
 }
-
-.cuadro:hover {
+.categorias .cuadro:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
@@ -991,260 +1302,6 @@ body {
   max-width: 100%;
   border-radius: 20px;
   height: auto;
-}
-
-.presentacion-contactos {
-  position: relative;
-}
-.presentacion-contactos h2 {
-  text-align: center;
-  text-decoration: underline;
-  font-style: italic;
-  font-size: 20px;
-  margin: 20px;
-}
-.presentacion-contactos h1 {
-  text-align: center;
-  font-size: 40px;
-  margin: 10px;
-}
-.presentacion-contactos p {
-  text-align: center;
-  font-style: italic;
-  margin: 20px;
-}
-
-.info-contactos {
-  position: relative;
-  text-align: center;
-}
-.info-contactos h2 {
-  margin-top: 60px;
-  text-decoration: underline;
-  font-size: 20px;
-}
-.info-contactos p {
-  margin-top: 5px;
-  margin: 20px;
-}
-.info-contactos img {
-  width: 30px;
-  top: 40px;
-}
-
-.horarios-contactos h2 {
-  text-decoration: underline;
-  margin: 20px;
-}
-.horarios-contactos p {
-  margin: 20px;
-}
-
-.info-contactos2 {
-  position: relative;
-}
-.info-contactos2 img {
-  width: 20px;
-  margin: 20px;
-}
-.info-contactos2 .telefono {
-  top: -1px;
-  left: 24px;
-  font-size: 18px;
-  position: absolute;
-  margin: 20px;
-}
-.info-contactos2 .mail {
-  top: 60px;
-  left: 28px;
-  font-size: 18px;
-  position: absolute;
-  margin: 20px;
-}
-.info-contactos2 .ubicacion {
-  top: 120px;
-  left: 28px;
-  margin: 20px;
-  font-size: 18px;
-  position: absolute;
-}
-
-.formulario-contacto h1 {
-  font-size: 25px;
-  padding-top: 8px;
-  padding-left: 18px;
-}
-.formulario-contacto div {
-  margin: 20px;
-}
-
-.terminos-y-condiciones {
-  margin: 20px;
-}
-
-.cuestionario {
-  padding-left: 16px;
-}
-.cuestionario h2 {
-  text-align: left;
-  text-decoration: solid;
-  background-color: #383838;
-  box-shadow: 2px 5px rgba(0, 0, 0, 0.132);
-  border: rgba(255, 125, 3, 0.1176470588);
-  border-radius: 10px;
-  color: #ff7d03;
-  padding: 20px;
-  font-size: 20px;
-}
-.cuestionario li {
-  list-style: none;
-}
-.cuestionario h3 {
-  font-size: 17px;
-  margin-left: 12px;
-}
-.cuestionario h4 {
-  font-size: 15px;
-  margin-left: 12px;
-}
-
-.titulos {
-  text-align: center;
-  text-decoration: solid;
-  padding: 20px;
-}
-.titulos h2 {
-  margin: 20px;
-  font-size: 18px;
-  font-style: italic;
-  text-decoration: underline;
-}
-.titulos h1 {
-  font-size: 25px;
-}
-.titulos p {
-  color: black;
-  padding: 7px 10px;
-  text-align: center;
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: fit-content;
-}
-
-.info-sobrenosotros {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  padding: 40px;
-}
-.info-sobrenosotros .contenido-texto {
-  max-width: 500px;
-  text-align: left;
-}
-.info-sobrenosotros .contenido-texto h1 {
-  text-align: left;
-  margin: 20px;
-  padding: 10px;
-  padding-bottom: 10px;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.info-sobrenosotros .contenido-texto p {
-  margin: 20px;
-  padding: 10px;
-  padding-top: 1px;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.contenido-img {
-  display: flex;
-  justify-content: center;
-}
-.contenido-img img {
-  width: 100%;
-  max-width: 300px;
-  display: block;
-  margin: auto;
-  border-radius: 20px;
-}
-
-.publicidad-sobrenosotros {
-  height: 300px;
-  display: flex;
-  border-radius: 15px;
-  padding: 30px;
-  color: rgb(235, 228, 228);
-  background-image: linear-gradient(to right, #ff7d03, rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
-  background-size: cover;
-  background-position: center;
-  margin: 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.338);
-  margin-bottom: 40px;
-}
-.publicidad-sobrenosotros .contenido-texto-2 {
-  max-width: 600px;
-  margin-top: 10px;
-}
-.publicidad-sobrenosotros .contenido-texto-2 h2 {
-  font-style: italic;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-.publicidad-sobrenosotros .contenido-texto-2 h3 {
-  font-size: 15px;
-}
-
-.beneficios-sobrenosotros {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-}
-.beneficios-sobrenosotros h3 {
-  font-size: 30px;
-  margin-bottom: 10px;
-}
-.beneficios-sobrenosotros p {
-  font-size: 16px;
-  max-width: 870px;
-  margin-bottom: 10px;
-}
-
-.cuadros-info-nosotros {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 30px;
-  border-radius: 10px;
-  text-align: center;
-}
-.cuadros-info-nosotros div {
-  background-color: #ff7d03;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
-}
-.cuadros-info-nosotros div img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-}
-.cuadros-info-nosotros div h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #383838;
-}
-.cuadros-info-nosotros div p {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-style: italic;
-  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
