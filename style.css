@@ -678,34 +678,6 @@ footer .derecha-footer .email {
   }
 }
 @media only screen and (max-width: 480px) {
-  .mas-vendidos,
-  .nosotros-box,
-  .beneficios-box,
-  .contacto-box,
-  .preguntas-box,
-  .tienda-box {
-    background-color: #ff7d03;
-    border-radius: 10px;
-    box-shadow: box-shadow 0 4px 8px rgba(134, 57, 19, 0.323);
-    color: #383838;
-    padding: 5px 10px;
-    text-align: center;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: fit-content;
-    font-size: 12px;
-  }
-  .mas-vendidos h2,
-  .nosotros-box h2,
-  .beneficios-box h2,
-  .contacto-box h2,
-  .preguntas-box h2,
-  .tienda-box h2 {
-    font-size: 12px;
-    margin-top: 5px;
-  }
   .contacto-box {
     padding: 12px 12px 5px 12px;
   }

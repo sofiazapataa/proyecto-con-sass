@@ -1,19 +1,6 @@
 @use"./variables"as*;
 
 @media only screen and (max-width: 480px) {
-  .mas-vendidos,
-  .nosotros-box,
-  .beneficios-box,
-  .contacto-box,
-  .preguntas-box,
-  .tienda-box {
-    @include caja-destacada-mobile;
-    h2 {
-      font-size: 12px;
-      margin-top: 5px;
-    }
-  }
-
 // contactos 
 
     .contacto-box{
