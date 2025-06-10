@@ -7,7 +7,7 @@ body{
 }
 
 .banner{
-        background-image: url(./medios/banner.jpg);
+        background-image: url(../medios/banner.jpg);
         background-size: cover;
         background-position: center;  
     .sombra-textos{
@@ -88,7 +88,7 @@ body{
   color: $blanco;
   background-image:
     linear-gradient(to right, rgba(255, 119, 0, 0.477)),
-    url('./medios/banner3.jpg'); 
+    url('../medios/banner3.jpg'); 
   background-size: cover;
   background-position: center;
   margin: 20px;

@@ -362,7 +362,7 @@ footer .derecha-footer .email {
   border-radius: 15px;
   padding: 30px;
   color: rgb(235, 228, 228);
-  background-image: linear-gradient(to right, rgba(255, 119, 0, 0.313)), url("./medios/banner sobre nosotros.jpg");
+  background-image: linear-gradient(to right, rgba(255, 119, 0, 0.313)), url("../medios/banner3.jpg");
   background-size: cover;
   background-position: center;
   margin: 20px;
@@ -582,7 +582,7 @@ body {
 }
 
 .banner {
-  background-image: url(./medios/banner.jpg);
+  background-image: url(../medios/banner.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -666,7 +666,7 @@ body {
   border-radius: 15px;
   padding: 30px;
   color: #ffffff;
-  background-image: linear-gradient(to right, rgba(255, 119, 0, 0.477)), url("./medios/banner3.jpg");
+  background-image: linear-gradient(to right, rgba(255, 119, 0, 0.477)), url("../medios/banner3.jpg");
   background-size: cover;
   background-position: center;
   margin: 20px;

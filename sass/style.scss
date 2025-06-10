@@ -1,19 +1,19 @@
-@use "./partials/header-footer" as*;
-@use "./partials/tienda" as*;
-@use"./partials/sobrenosotros" as*;
-@use"./partials/contactos"as*;
-@use"./partials/preguntasfrecuentes"as*;
-@use "./partials/variables" as*;
-@use"./partials/home" as*;
+@use "../partials/header-footer" as*;
+@use "../partials/tienda" as*;
+@use"../partials/sobrenosotros" as*;
+@use"../partials/contactos"as*;
+@use"../partials/preguntasfrecuentes"as*;
+@use "../partials/variables" as*;
+@use"../partials/home" as*;
 
 
 
-@use"./partials/media-sobrenosotros"as*;
-@use"./partials/media-contactos"as*;
-@use"./partials/media-preguntasfrecuentes"as*;
-@use"./partials/media-tienda"as*;
-@use"./partials/media-footer"as*;
-@use"./partials/media-home"as*;
+@use"../partials/media-sobrenosotros"as*;
+@use"../partials/media-contactos"as*;
+@use"../partials/media-preguntasfrecuentes"as*;
+@use"../partials/media-tienda"as*;
+@use"../partials/media-footer"as*;
+@use"../partials/media-home"as*;
 
 
 
@@ -66,11 +66,3 @@
 // efecto magic card
 
 // librerias para animaciones
-// animate.css (100% css)
-
-
-
-
-
-// agregar a los titulos box, agrandar al pasar el mouse
-// & agregar a los que se repiten
