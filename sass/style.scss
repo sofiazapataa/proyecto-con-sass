@@ -6,14 +6,15 @@
 @use "../partials/variables" as*;
 @use"../partials/home" as*;
 
-
+@use"../partials/media-tablet-tienda"as*;
+@use"../partials/media-tablet-preguntasfrecuentes"as*;
 @use"../partials/media-tablet-home"as*;
-@use"../partials/media-sobrenosotros"as*;
-@use"../partials/media-contactos"as*;
-@use"../partials/media-preguntasfrecuentes"as*;
-@use"../partials/media-tienda"as*;
+@use"../partials/media-movile-sobrenosotros"as*;
+@use"../partials/media-movile-contactos"as*;
+@use"../partials/media-movile-preguntasfrecuentes"as*;
+@use"../partials/media-movile-tienda"as*;
+@use"../partials/media-movile-home"as*;
 @use"../partials/media-footer"as*;
-@use"../partials/media-home"as*;
 
 
 
