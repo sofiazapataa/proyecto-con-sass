@@ -840,7 +840,7 @@ body {
   height: auto;
 }
 
-@media only screen and (min-width: 979px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .mas-vendidos,
   .nosotros-box,
   .beneficios-box,
@@ -868,6 +868,9 @@ body {
   .tienda-box h2 {
     font-size: 12px;
     margin-top: 5px;
+  }
+  .info div h2 {
+    font-size: 5px !important;
   }
   .info-2 {
     display: flex;

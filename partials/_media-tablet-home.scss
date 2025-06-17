@@ -1,10 +1,9 @@
 @use"./variables" as*;
 
-// desktop 
 // tablet
 
-@media only screen and (min-width:979px) {
-     .mas-vendidos,
+@media only screen and (max-width: 1024px) {
+  .mas-vendidos,
   .nosotros-box,
   .beneficios-box,
   .contacto-box,
@@ -16,11 +15,13 @@
       margin-top: 5px;
     }
   }  
-  .info{
-    h2{
-        font-size: 5px;
+.info{
+    div{
+     h2{
+        font-size: 12px !important;
     }
   }
+}
 .info-2{
         display: flex;
         align-items: center;
