@@ -1539,7 +1539,7 @@ body {
   }
   .categorias .cuadros-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     margin: 10px;
     margin-top: 2px;
@@ -1567,18 +1567,13 @@ body {
     text-align: center;
     padding: 10px;
   }
-  .info-ecommerce .contenido img {
-    width: 100%;
-    border-radius: 15px;
-  }
   .info-ecommerce .contenido .contenido {
     text-align: center;
-    max-width: 300px;
     padding: 10px;
   }
   .info-ecommerce .contenido .contenido .logo {
-    width: 60px;
-    margin-bottom: 10px;
+    width: 20px !important;
+    height: 20px !important;
     border-radius: 10px;
   }
   .info-ecommerce .contenido .contenido p {
@@ -1590,9 +1585,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
-  }
-  .info-ecommerce .contenido .iconos img {
-    width: 30px;
   }
   .wp {
     width: 75px;
